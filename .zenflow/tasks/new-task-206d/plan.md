@@ -73,7 +73,7 @@ Save to `{@artifacts_path}/plan.md`.
 - Register `AppDomain.CurrentDomain.AssemblyResolve`.
 - Verification: Unit test with dummy DLLs in `PML_Internal/` and `Mods/ModName/Deps/`.
 
-### [ ] Step: Interop & Metadata v39 Support
+### [x] Step: Interop & Metadata v39 Support
 <!-- chat-id: 7636513f-321d-4835-bd26-435a2ce84d6d -->
 - Implement 12-second safety delay in `Entrypoint.cs`.
 - Integrate `Iced` for Xref scanning.

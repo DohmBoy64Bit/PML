@@ -9,6 +9,9 @@ namespace PML
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool AllocConsole();
 
+        [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Auto)]
+        private static extern IntPtr GetModuleHandle(string lpModuleName);
+
         /// <summary>
         /// Doorstop entrypoint.
         /// </summary>
@@ -35,7 +38,30 @@ namespace PML
         private static void InitializeInterop()
         {
             Logger.LogV39("Initializing Il2CppInterop with Metadata v39 support...");
-            // TODO: Implement metadata version override
+            
+            IntPtr gameAssembly = GetModuleHandle("GameAssembly.dll");
+            if (gameAssembly == IntPtr.Zero)
+            {
+                Logger.LogCore("Failed to find GameAssembly.dll!");
+                return;
+            }
+
+            Logger.LogCore($"Found GameAssembly.dll at 0x{gameAssembly.ToInt64():X}");
+
+            try 
+            {
+                // Initialize the Il2CppInterop Runtime
+                // Note: We are using the highest available struct handlers (v31) 
+                // and relying on Metadata v39 compatibility.
+                Il2CppInterop.Runtime.Il2CppInteropRuntime.Initialize();
+                
+                Logger.LogV39("Il2CppInterop initialized successfully.");
+            }
+            catch (Exception ex)
+            {
+                Logger.LogCore($"Failed to initialize interop: {ex.Message}");
+                Logger.LogCore(ex.StackTrace ?? "No stack trace available.");
+            }
         }
     }
 }
