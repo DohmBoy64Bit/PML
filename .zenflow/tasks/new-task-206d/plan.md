@@ -53,7 +53,8 @@ If the feature is trivial and doesn't warrant full specification, update this wo
 
 Save to `{@artifacts_path}/plan.md`.
 
-### [ ] Step: Project Scaffolding
+### [x] Step: Project Scaffolding
+<!-- chat-id: 5e970702-9c33-43dc-9e55-79b678e736b0 -->
 - Create `src/PolytoriaLoader` and `src/PML.SDK` projects targeting .NET 6.0.
 - Set up directory structure: `PML_Internal/Il2CppAssemblies/`, `Mods/`.
 - Configure `CLAUDE.md` with build and lint commands.

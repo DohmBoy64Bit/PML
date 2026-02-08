@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PML.SDK/PML.SDK.csproj" />
+    <Project Path="src/PolytoriaLoader/PolytoriaLoader.csproj" />
+  </Folder>
+</Solution>
