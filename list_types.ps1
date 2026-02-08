@@ -1,0 +1,1 @@
+Add-Type -Path 'C:\Users\SeanS\.zenflow\worktrees\new-task-206d\src\PolytoriaLoader\bin\Debug\net6.0\Il2CppInterop.Common.dll'; $a = [Reflection.Assembly]::LoadFile('C:\Users\SeanS\.zenflow\worktrees\new-task-206d\src\PolytoriaLoader\bin\Debug\net6.0\Il2CppInterop.Runtime.dll'); $a.GetExportedTypes().FullName 

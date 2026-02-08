@@ -61,21 +61,31 @@ namespace Doorstop
             // Metadata v39 Support initialization
             InitializeInterop();
 
-            // Register and Initialize MainThreadDispatcher
-            ClassInjector.RegisterTypeInIl2Cpp<MainThreadDispatcher>();
-            MainThreadDispatcher.Initialize();
+            try
+            {
+                // Register and Initialize MainThreadDispatcher
+                Logger.LogCore("Registering MainThreadDispatcher...");
+                ClassInjector.RegisterTypeInIl2Cpp<MainThreadDispatcher>();
+                
+                Logger.LogCore("Initializing MainThreadDispatcher...");
+                MainThreadDispatcher.Initialize();
 
-            // Initialize Lua Bridge
-            LuaBridge.Initialize();
+                // Initialize Lua Bridge
+                Logger.LogCore("Initializing LuaBridge...");
+                LuaBridge.Initialize();
 
-            // Discover and Load Mods
-            ModLoader.LoadMods();
+                // Discover and Load Mods
+                Logger.LogCore("Loading Mods...");
+                ModLoader.LoadMods();
 
-            // Verification: Execute a Lua print statement from C#
-            // Note: In a real environment, we would be tracking the game's scripts.
-            var testScript = new MoonSharp.Interpreter.Script();
-            LuaBridge.RegisterScript(testScript);
-            PML.Lua.Run("print('[PML:VERIFY] Lua is working!')");
+                Logger.LogCore("PML initialization sequence complete.");
+            }
+            catch (Exception ex)
+            {
+                string errorMsg = $"FATAL ERROR during PML initialization:\n{ex.Message}\n\n{ex.StackTrace}";
+                Logger.LogCore(errorMsg);
+                MessageBox(IntPtr.Zero, errorMsg, "PML Fatal Error", 0x10); // 0x10 is MB_ICONERROR
+            }
         }
 
         private static void InitializeInterop()
@@ -93,17 +103,17 @@ namespace Doorstop
 
             try 
             {
-                // Initialize the Il2CppInterop Runtime
-                // Note: We are using the highest available struct handlers (v31) 
-                // and relying on Metadata v39 compatibility.
-                // Il2CppInterop.Runtime.Il2CppInteropRuntime.Initialize();
+                // ACTUAL INITIALIZATION
+                Logger.LogV39("Calling Runtime.Initialize()...");
+                Il2CppInterop.Runtime.Runtime.Initialize();
                 
                 Logger.LogV39("Il2CppInterop initialized successfully.");
             }
             catch (Exception ex)
             {
-                Logger.LogCore($"Failed to initialize interop: {ex.Message}");
-                Logger.LogCore(ex.StackTrace ?? "No stack trace available.");
+                string errorMsg = $"Failed to initialize interop: {ex.Message}\n{ex.StackTrace}";
+                Logger.LogCore(errorMsg);
+                MessageBox(IntPtr.Zero, errorMsg, "PML Interop Error", 0x10);
             }
         }
     }

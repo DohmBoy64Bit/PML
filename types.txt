@@ -1,0 +1,1 @@
+[Reflection.Assembly]::LoadFile('C:\Users\SeanS\.zenflow\worktrees\new-task-206d\src\PolytoriaLoader\bin\Debug\net6.0\Il2CppInterop.Runtime.dll').GetTypes() | Select-Object FullName
