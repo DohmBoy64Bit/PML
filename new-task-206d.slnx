@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/PML.SDK/PML.SDK.csproj" />
+    <Project Path="src/PML.Tests/PML.Tests.csproj" />
     <Project Path="src/PolytoriaLoader/PolytoriaLoader.csproj" />
   </Folder>
 </Solution>

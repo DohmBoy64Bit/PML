@@ -22,6 +22,8 @@ namespace PML
 
             Logger.LogCore("PML Booting...");
 
+            AssemblyResolver.Initialize();
+
             // Note: The 12-second safety wait and metadata version override 
             // will be implemented in the "Interop & Metadata v39 Support" step.
         }

@@ -67,7 +67,8 @@ Save to `{@artifacts_path}/plan.md`.
 - Implement `Entrypoint.Start` as the Doorstop entrypoint.
 - Verification: Log "PML Booting" and verify it appears in a new console window.
 
-### [ ] Step: Assembly Resolver
+### [x] Step: Assembly Resolver
+<!-- chat-id: 6638d093-80a3-4373-89c3-a603afa5a650 -->
 - Implement `AssemblyResolver.cs` with 3-tier recursive logic (System, Plugin, Dependency).
 - Register `AppDomain.CurrentDomain.AssemblyResolve`.
 - Verification: Unit test with dummy DLLs in `PML_Internal/` and `Mods/ModName/Deps/`.
