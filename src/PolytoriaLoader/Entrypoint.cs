@@ -2,6 +2,7 @@ using System;
 using System.Runtime.InteropServices;
 using Il2CppInterop.Runtime.Injection;
 using Il2CppInterop.Runtime;
+using Il2CppInterop.Runtime.Startup;
 using PML;
 
 namespace Doorstop
@@ -103,9 +104,16 @@ namespace Doorstop
 
             try 
             {
-                // ACTUAL INITIALIZATION
-                Logger.LogV39("Calling Runtime.Initialize()...");
-                Il2CppInterop.Runtime.Runtime.Initialize();
+                // ACTUAL INITIALIZATION (1.5.1 API)
+                Logger.LogV39("Configuring Il2CppInterop Runtime...");
+                
+                var config = new RuntimeConfiguration {
+                    UnityVersion = new Version(6000, 3, 7) // Unity 6 (6000.3.7f1)
+                };
+
+                Logger.LogV39("Creating and starting Il2CppInteropRuntime...");
+                var runtime = Il2CppInteropRuntime.Create(config);
+                runtime.Start();
                 
                 Logger.LogV39("Il2CppInterop initialized successfully.");
             }
