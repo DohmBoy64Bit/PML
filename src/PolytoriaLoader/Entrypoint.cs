@@ -7,6 +7,15 @@ namespace PML
 {
     public static class Entrypoint
     {
+        static Entrypoint()
+        {
+            // This runs as soon as the class is referenced by the loader
+            if (System.IO.File.Exists("PML_VERBOSE") || System.IO.File.Exists("PML_VERBOSE.txt"))
+            {
+                MessageBox(IntPtr.Zero, "PML Static Constructor Hit!", "PML Debug", 0);
+            }
+        }
+
         [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool AllocConsole();
@@ -20,19 +29,19 @@ namespace PML
         /// <summary>
         /// Alternate entrypoint for Doorstop CoreCLR.
         /// </summary>
-        public static void Main(string[] args) => Start();
+        public static void Main(string[] args)
+        {
+            Start();
+        }
 
         /// <summary>
         /// Doorstop entrypoint.
         /// </summary>
         public static void Start()
         {
-            // Optional: Uncomment for Just-In-Time debugging
-            // if (System.IO.File.Exists("PML_DEBUG") || System.IO.File.Exists("PML_DEBUG.txt")) System.Diagnostics.Debugger.Launch();
-
             // Immediate feedback to verify loading
             if (System.IO.File.Exists("PML_VERBOSE") || System.IO.File.Exists("PML_VERBOSE.txt"))
-                MessageBox(IntPtr.Zero, "PML Entrypoint Hit!", "PML Debug", 0);
+                MessageBox(IntPtr.Zero, "PML Start() Hit!", "PML Debug", 0);
 
             // Allocate console for developer interface
             if (AllocConsole())

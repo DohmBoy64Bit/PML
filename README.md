@@ -39,13 +39,17 @@ dotnet build src/PML.SDK/PML.SDK.csproj
 3. Ensure `PML_Internal/Il2CppAssemblies/` contains the necessary interop DLLs.
 4. Place your mods in the `Mods/[ModName]/` directory.
 
-### `doorstop_config.ini`
+### `doorstop_config.ini` (Doorstop 4 CoreCLR)
 ```ini
 [UnityDoorstop]
 enabled=true
 targetAssembly=PolytoriaLoader.dll
 redirectOutput=true
-ignoreWindowsRuntime=true 
+ignoreWindowsRuntime=true
+
+[CoreCLR]
+RuntimePath=C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.36\coreclr.dll
+TrustedPlatformAssembliesLocation=C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.36\
 ```
 
 ## 👨‍💻 Mod Development (PML.SDK)
