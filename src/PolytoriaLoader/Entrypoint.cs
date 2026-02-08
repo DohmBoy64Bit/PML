@@ -14,11 +14,26 @@ namespace PML
         [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Auto)]
         private static extern IntPtr GetModuleHandle(string lpModuleName);
 
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        private static extern int MessageBox(IntPtr hWnd, string text, string caption, uint type);
+
+        /// <summary>
+        /// Alternate entrypoint for Doorstop CoreCLR.
+        /// </summary>
+        public static void Main(string[] args) => Start();
+
         /// <summary>
         /// Doorstop entrypoint.
         /// </summary>
         public static void Start()
         {
+            // Optional: Uncomment for Just-In-Time debugging
+            // if (System.IO.File.Exists("PML_DEBUG")) System.Diagnostics.Debugger.Launch();
+
+            // Immediate feedback to verify loading
+            if (System.IO.File.Exists("PML_VERBOSE"))
+                MessageBox(IntPtr.Zero, "PML Entrypoint Hit!", "PML Debug", 0);
+
             // Allocate console for developer interface
             if (AllocConsole())
             {
