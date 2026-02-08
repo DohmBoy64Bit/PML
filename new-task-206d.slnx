@@ -3,5 +3,6 @@
     <Project Path="src/PML.SDK/PML.SDK.csproj" />
     <Project Path="src/PML.Tests/PML.Tests.csproj" />
     <Project Path="src/PolytoriaLoader/PolytoriaLoader.csproj" />
+    <Project Path="src/TestMod/TestMod.csproj" />
   </Folder>
 </Solution>

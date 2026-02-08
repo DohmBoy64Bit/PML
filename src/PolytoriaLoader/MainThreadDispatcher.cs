@@ -34,6 +34,11 @@ namespace PML
             }
         }
 
+        public void Start()
+        {
+            ModLoader.OnUnityReady();
+        }
+
         public void Update()
         {
             lock (_executionQueue)
@@ -50,6 +55,8 @@ namespace PML
                     }
                 }
             }
+
+            ModLoader.OnUpdate();
         }
     }
 }

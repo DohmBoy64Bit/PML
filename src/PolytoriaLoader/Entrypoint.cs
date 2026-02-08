@@ -43,6 +43,9 @@ namespace PML
             // Initialize Lua Bridge
             LuaBridge.Initialize();
 
+            // Discover and Load Mods
+            ModLoader.LoadMods();
+
             // Verification: Execute a Lua print statement from C#
             // Note: In a real environment, we would be tracking the game's scripts.
             var testScript = new MoonSharp.Interpreter.Script();

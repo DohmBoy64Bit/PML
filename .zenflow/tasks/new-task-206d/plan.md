@@ -87,7 +87,8 @@ Save to `{@artifacts_path}/plan.md`.
 - Implement `PML.Lua` API (`Run`, `Register`).
 - Verification: Execute a Lua `print` statement from C# and verify output.
 
-### [ ] Step: Plugin SDK & Lifecycle Hooks
+### [x] Step: Plugin SDK & Lifecycle Hooks
+<!-- chat-id: 798b315e-5bf5-47cb-998e-7c0c550ce7bd -->
 - Implement `PolytoriaMod` abstract class in `PML.SDK`.
 - Implement mod discovery and instantiation logic.
 - Implement lifecycle calls: `OnInitialize`, `OnUnityReady`, `OnUpdate`.
