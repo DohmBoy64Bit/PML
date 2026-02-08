@@ -60,7 +60,8 @@ Save to `{@artifacts_path}/plan.md`.
 - Configure `CLAUDE.md` with build and lint commands.
 - Verification: Projects build successfully as class libraries.
 
-### [ ] Step: Core Bootstrapper & Console
+### [x] Step: Core Bootstrapper & Console
+<!-- chat-id: 8cbba645-22e2-43d3-b8bd-02be80ddefed -->
 - Implement Win32 console allocation (`AllocConsole`).
 - Create `Logger.cs` with `[PML:CORE]`, `[PML:V39]`, `[PML:LUA]`, `[PML:MOD]` prefixes.
 - Implement `Entrypoint.Start` as the Doorstop entrypoint.
