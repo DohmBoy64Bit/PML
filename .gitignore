@@ -1,12 +1,18 @@
 # .NET
-bin/
-obj/
+[Bb]in/
+[Oo]bj/
 *.user
 *.userosscache
 *.sln.docuser
+*.suo
+*.user
+*.userosscache
+*.sln.docuser
+*.userprefs
 
 # Visual Studio
 .vs/
+.vscode/
 
 # Unity
 [Ll]ibrary/
@@ -17,8 +23,17 @@ obj/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 
-# PML Generated
+# PML Specific
 PML_Internal/Il2CppAssemblies/
 PML_Internal/PML_Log.txt
-Mods/*/bin/
-Mods/*/obj/
+Mods/
+!Mods/.gitkeep
+
+# Task Specific (Requested)
+ConvertThisMod/
+PolyTopiaSource/
+
+# OS Specific
+.DS_Store
+thumbs.db
+desktop.ini
