@@ -97,3 +97,8 @@ Save to `{@artifacts_path}/plan.md`.
 - Port the MelonLoader mod from `ConvertThisMod/` to the PML SDK.
 - Adapt the IPC server and MoonSharp script execution logic.
 - Verification: Verify the converted mod can receive and execute Lua scripts via IPC.
+
+### [ ] Step: Internal Assembly Generation (Future)
+- Implement integrated `Il2CppInterop.Generator` support within the loader.
+- Support automated dumping of Metadata v39 without external scripts.
+- Verification: Loader successfully generates interop DLLs from a clean game install.
