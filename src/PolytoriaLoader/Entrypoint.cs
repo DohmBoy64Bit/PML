@@ -28,10 +28,10 @@ namespace PML
         public static void Start()
         {
             // Optional: Uncomment for Just-In-Time debugging
-            // if (System.IO.File.Exists("PML_DEBUG")) System.Diagnostics.Debugger.Launch();
+            // if (System.IO.File.Exists("PML_DEBUG") || System.IO.File.Exists("PML_DEBUG.txt")) System.Diagnostics.Debugger.Launch();
 
             // Immediate feedback to verify loading
-            if (System.IO.File.Exists("PML_VERBOSE"))
+            if (System.IO.File.Exists("PML_VERBOSE") || System.IO.File.Exists("PML_VERBOSE.txt"))
                 MessageBox(IntPtr.Zero, "PML Entrypoint Hit!", "PML Debug", 0);
 
             // Allocate console for developer interface
