@@ -80,7 +80,8 @@ Save to `{@artifacts_path}/plan.md`.
 - Implement metadata version override or manual pointer lookup for `Il2CppInterop`.
 - Verification: Successfully identify game method pointers using `Iced`.
 
-### [ ] Step: Lua Bridge & MainThreadDispatcher
+### [x] Step: Lua Bridge & MainThreadDispatcher
+<!-- chat-id: 4dd29fec-dadc-49f7-ba6a-bd6e1cc27288 -->
 - Implement `MainThreadDispatcher` for marshaling calls to Unity's main thread.
 - Implement `LuaBridge.cs` to track `MoonSharp.Interpreter.Script` instances.
 - Implement `PML.Lua` API (`Run`, `Register`).

@@ -10,6 +10,23 @@
     <PackageReference Include="dnlib" Version="4.5.0" />
     <PackageReference Include="Iced" Version="1.17.0" />
     <PackageReference Include="Il2CppInterop.Runtime" Version="1.5.1" />
+    <PackageReference Include="MoonSharp" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\PML_Internal\Il2CppAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\PML_Internal\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\PML_Internal\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PML.SDK\PML.SDK.csproj" />
   </ItemGroup>
 
 </Project>
