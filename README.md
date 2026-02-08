@@ -41,16 +41,17 @@ dotnet build src/PML.SDK/PML.SDK.csproj
 
 ### `doorstop_config.ini` (Doorstop 4 CoreCLR)
 ```ini
-[UnityDoorstop]
+[General]
 enabled=true
-targetAssembly=PolytoriaLoader.dll
-redirectOutput=true
-ignoreWindowsRuntime=true
+target_assembly=PolytoriaLoader.dll
+redirect_output_log=true
 
-[CoreCLR]
-RuntimePath=C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.36\coreclr.dll
-TrustedPlatformAssembliesLocation=C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.36\
+[Il2Cpp]
+coreclr_path=C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.36\coreclr.dll
+corlib_dir=C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.36\
 ```
+
+**Note:** The entrypoint must be `Doorstop.Entrypoint.Start()`. PML handles this automatically.
 
 ## 👨‍💻 Mod Development (PML.SDK)
 

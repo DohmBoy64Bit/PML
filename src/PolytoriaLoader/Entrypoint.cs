@@ -2,8 +2,9 @@ using System;
 using System.Runtime.InteropServices;
 using Il2CppInterop.Runtime.Injection;
 using Il2CppInterop.Runtime;
+using PML;
 
-namespace PML
+namespace Doorstop
 {
     public static class Entrypoint
     {
