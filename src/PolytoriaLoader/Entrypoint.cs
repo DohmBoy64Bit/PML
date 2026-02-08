@@ -24,8 +24,18 @@ namespace PML
 
             AssemblyResolver.Initialize();
 
-            // Note: The 12-second safety wait and metadata version override 
-            // will be implemented in the "Interop & Metadata v39 Support" step.
+            // 12-second safety wait for Unity metadata buffer to settle
+            Logger.LogCore("Waiting 12 seconds for Unity initialization...");
+            System.Threading.Thread.Sleep(12000);
+
+            // Metadata v39 Support initialization
+            InitializeInterop();
+        }
+
+        private static void InitializeInterop()
+        {
+            Logger.LogV39("Initializing Il2CppInterop with Metadata v39 support...");
+            // TODO: Implement metadata version override
         }
     }
 }
