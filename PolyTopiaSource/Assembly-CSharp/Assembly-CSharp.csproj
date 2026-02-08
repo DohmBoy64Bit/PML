@@ -1,0 +1,969 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{099F1A1F-22C6-4AC0-84BE-011976AD2F41}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Battlehub.RTEditor">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Battlehub.RTEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="glTFast">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\glTFast.dll</HintPath>
+    </Reference>
+    <Reference Include="HSVPicker">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\HSVPicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Common">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2CppInterop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Net.Http">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2CppSystem.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2CppSystem.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror.Components">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Mirror.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftMask">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\SoftMask.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="U8XmlParser">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\U8XmlParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Unity.AI.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefaultCamera.cs" />
+    <Compile Include="EmptySprite.cs" />
+    <Compile Include="FreeModifier.cs" />
+    <Compile Include="Mirror\GeneratedNetworkCode.cs" />
+    <Compile Include="namudev\PropertyGrid.cs" />
+    <Compile Include="namudev\PropertyGridBinding.cs" />
+    <Compile Include="namudev\PropertyGridBool.cs" />
+    <Compile Include="namudev\PropertyGridColor.cs" />
+    <Compile Include="namudev\PropertyGridEnum.cs" />
+    <Compile Include="namudev\PropertyGridFloat.cs" />
+    <Compile Include="namudev\PropertyGridInt.cs" />
+    <Compile Include="namudev\PropertyGridItem.2.cs" />
+    <Compile Include="namudev\PropertyGridItem.cs" />
+    <Compile Include="namudev\PropertyGridQuaternion.cs" />
+    <Compile Include="namudev\PropertyGridSelector.cs" />
+    <Compile Include="namudev\PropertyGridString.cs" />
+    <Compile Include="namudev\PropertyGridTemplate.cs" />
+    <Compile Include="namudev\PropertyGridVector2.cs" />
+    <Compile Include="namudev\PropertyGridVector3.cs" />
+    <Compile Include="namudev\PropertyGridVector4.cs" />
+    <Compile Include="OnlyOneEdgeModifier.cs" />
+    <Compile Include="Polytoria\Controllers\AbuseReportController.cs" />
+    <Compile Include="Polytoria\Controllers\AppearanceController.cs" />
+    <Compile Include="Polytoria\Controllers\AppearanceData.cs" />
+    <Compile Include="Polytoria\Controllers\AppearanceLoaderBase.cs" />
+    <Compile Include="Polytoria\Controllers\ClipboardController.cs" />
+    <Compile Include="Polytoria\Controllers\CreatorController.cs" />
+    <Compile Include="Polytoria\Controllers\CreatorMenuCmdController.cs" />
+    <Compile Include="Polytoria\Controllers\CreatorStart.cs" />
+    <Compile Include="Polytoria\Controllers\CreatorThumbnailGenerator.cs" />
+    <Compile Include="Polytoria\Controllers\DiscordController.cs" />
+    <Compile Include="Polytoria\Controllers\GameIO.cs" />
+    <Compile Include="Polytoria\Controllers\GlobalStateController.cs" />
+    <Compile Include="Polytoria\Controllers\HotbarController.cs" />
+    <Compile Include="Polytoria\Controllers\ImageCacheController.cs" />
+    <Compile Include="Polytoria\Controllers\ImageCacheEntry.cs" />
+    <Compile Include="Polytoria\Controllers\ImageCacheKey.cs" />
+    <Compile Include="Polytoria\Controllers\ImageType.cs" />
+    <Compile Include="Polytoria\Controllers\LaunchController.cs" />
+    <Compile Include="Polytoria\Controllers\LoadScreenController.cs" />
+    <Compile Include="Polytoria\Controllers\MaterialCache.cs" />
+    <Compile Include="Polytoria\Controllers\MenuTabPair.cs" />
+    <Compile Include="Polytoria\Controllers\MeshPartLoadController.cs" />
+    <Compile Include="Polytoria\Controllers\MeshPartLoadRequest.cs" />
+    <Compile Include="Polytoria\Controllers\NetworkController.cs" />
+    <Compile Include="Polytoria\Controllers\NetworkType.cs" />
+    <Compile Include="Polytoria\Controllers\NPCAppearance.cs" />
+    <Compile Include="Polytoria\Controllers\PlayerAppearance.cs" />
+    <Compile Include="Polytoria\Controllers\ScreenshotController.cs" />
+    <Compile Include="Polytoria\Controllers\ScriptingAPIDumper.cs" />
+    <Compile Include="Polytoria\Controllers\SettingsController.cs" />
+    <Compile Include="Polytoria\Controllers\SpawnpointController.cs" />
+    <Compile Include="Polytoria\Controllers\ToolboxController.cs" />
+    <Compile Include="Polytoria\Controllers\UIController.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\CreatorPropertyGrid.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\Items\PropertyGridItemBoolean.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\Items\PropertyGridItemColor.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\Items\PropertyGridItemColorRange.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\Items\PropertyGridItemEnum.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\Items\PropertyGridItemFloat.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\Items\PropertyGridItemInteger.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\Items\PropertyGridItemNumberRange.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\Items\PropertyGridItemReadOnly.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\Items\PropertyGridItemString.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\Items\PropertyGridItemVector2.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\Items\PropertyGridItemVector3.cs" />
+    <Compile Include="Polytoria\Creator\PropertyGrid\PropertyGridItem.cs" />
+    <Compile Include="Polytoria\Datamodel\AmbientSource.cs" />
+    <Compile Include="Polytoria\Datamodel\AnimationInfo.cs" />
+    <Compile Include="Polytoria\Datamodel\Archivable.cs" />
+    <Compile Include="Polytoria\Datamodel\Backpack.cs" />
+    <Compile Include="Polytoria\Datamodel\BaseScript.cs" />
+    <Compile Include="Polytoria\Datamodel\BodyPart.cs" />
+    <Compile Include="Polytoria\Datamodel\BodyPosition.cs" />
+    <Compile Include="Polytoria\Datamodel\BoolValue.cs" />
+    <Compile Include="Polytoria\Datamodel\BoundsCalculationMethod.cs" />
+    <Compile Include="Polytoria\Datamodel\Camera.cs" />
+    <Compile Include="Polytoria\Datamodel\CameraMode.cs" />
+    <Compile Include="Polytoria\Datamodel\ClientSyncState.cs" />
+    <Compile Include="Polytoria\Datamodel\Climbable.cs" />
+    <Compile Include="Polytoria\Datamodel\CollisionType.cs" />
+    <Compile Include="Polytoria\Datamodel\ColorValue.cs" />
+    <Compile Include="Polytoria\Datamodel\CreatorProperty.cs" />
+    <Compile Include="Polytoria\Datamodel\Decal.cs" />
+    <Compile Include="Polytoria\Datamodel\DynamicInstance.cs" />
+    <Compile Include="Polytoria\Datamodel\Environment.cs" />
+    <Compile Include="Polytoria\Datamodel\Folder.cs" />
+    <Compile Include="Polytoria\Datamodel\Game.cs" />
+    <Compile Include="Polytoria\Datamodel\GradientSky.cs" />
+    <Compile Include="Polytoria\Datamodel\GUI.cs" />
+    <Compile Include="Polytoria\Datamodel\Hidden.cs" />
+    <Compile Include="Polytoria\Datamodel\ImageSky.cs" />
+    <Compile Include="Polytoria\Datamodel\Instance.cs" />
+    <Compile Include="Polytoria\Datamodel\InstanceValue.cs" />
+    <Compile Include="Polytoria\Datamodel\InstantiatableAttribute.cs" />
+    <Compile Include="Polytoria\Datamodel\IntValue.cs" />
+    <Compile Include="Polytoria\Datamodel\IToolHolder.cs" />
+    <Compile Include="Polytoria\Datamodel\Lighting.cs" />
+    <Compile Include="Polytoria\Datamodel\LocalScript.cs" />
+    <Compile Include="Polytoria\Datamodel\MeshPart.cs" />
+    <Compile Include="Polytoria\Datamodel\Model.cs" />
+    <Compile Include="Polytoria\Datamodel\ModuleScript.cs" />
+    <Compile Include="Polytoria\Datamodel\NetMessage.cs" />
+    <Compile Include="Polytoria\Datamodel\NetMessageReadWriteFunctions.cs" />
+    <Compile Include="Polytoria\Datamodel\NetworkEvent.cs" />
+    <Compile Include="Polytoria\Datamodel\NPC.cs" />
+    <Compile Include="Polytoria\Datamodel\NumberValue.cs" />
+    <Compile Include="Polytoria\Datamodel\Part.cs" />
+    <Compile Include="Polytoria\Datamodel\ParticleColorMode.cs" />
+    <Compile Include="Polytoria\Datamodel\Particles.cs" />
+    <Compile Include="Polytoria\Datamodel\ParticleShape.cs" />
+    <Compile Include="Polytoria\Datamodel\ParticleSimulationSpace.cs" />
+    <Compile Include="Polytoria\Datamodel\PartMaterial.cs" />
+    <Compile Include="Polytoria\Datamodel\PartShape.cs" />
+    <Compile Include="Polytoria\Datamodel\Player.cs" />
+    <Compile Include="Polytoria\Datamodel\PlayerChatEvent.cs" />
+    <Compile Include="Polytoria\Datamodel\PlayerDefaults.cs" />
+    <Compile Include="Polytoria\Datamodel\PlayerGUI.cs" />
+    <Compile Include="Polytoria\Datamodel\Players.cs" />
+    <Compile Include="Polytoria\Datamodel\PointLight.cs" />
+    <Compile Include="Polytoria\Datamodel\ProceduralSky.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\BackpackProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\BaseScriptProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\BodyPositionProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\BoolValueProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\CameraProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\ClimbableProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\ColorValueProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\DecalProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\DynamicInstanceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\EnvironmentProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\FolderProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\GameProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\GradientSkyProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\GUIProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\HiddenProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\ImageSkyProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\InstanceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\InstanceValueProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\IntValueProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\LightingProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\LocalScriptProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\MeshPartProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\ModelProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\ModuleScriptProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\NetworkEventProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\NPCProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\NumberValueProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\ParticlesProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\PartProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\PlayerDefaultsProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\PlayerGUIProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\PlayerProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\PlayersProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\PointLightProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\ProceduralSkyProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\RemoveEventProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\ScriptInstanceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\SeatProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\ServerHiddenProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Services\AchievementServiceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Services\ChatServiceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Services\CoreUIServiceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Services\DatastoreProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Services\DataStoreServiceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Services\FilterServiceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Services\HttpServiceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Services\InputServiceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Services\InsertServiceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Services\PurchasesServiceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Services\TweenServiceProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\SignalProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\SkyBaseProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\SoundProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\SpotlightProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\StringValueProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\SunLightProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Text3DProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\ToolProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\TrussProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\UIButtonProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\UIFieldProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\UIHorizontalLayoutProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\UIHVLayoutProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\UIImageProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\UILabelProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\UITextInputProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\UIVerticalLayoutProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\UIViewProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\ValueBaseProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\Proxies\Vector3ValueProxy.cs" />
+    <Compile Include="Polytoria\Datamodel\RayResult.cs" />
+    <Compile Include="Polytoria\Datamodel\RemoteEvent.cs" />
+    <Compile Include="Polytoria\Datamodel\ScriptInstance.cs" />
+    <Compile Include="Polytoria\Datamodel\Seat.cs" />
+    <Compile Include="Polytoria\Datamodel\ServerHidden.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\AchievementService.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\ChatService.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\CoreUIService.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\Datastore.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\DataStoreService.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\FilterService.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\GetDataStoreQueueEntry.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\HttpService.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\InputService.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\InsertService.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\ProfanityFilterData.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\ScriptService.cs" />
+    <Compile Include="Polytoria\Datamodel\Services\TweenService.cs" />
+    <Compile Include="Polytoria\Datamodel\Signal.cs" />
+    <Compile Include="Polytoria\Datamodel\SkyBase.cs" />
+    <Compile Include="Polytoria\Datamodel\SkyboxPreset.cs" />
+    <Compile Include="Polytoria\Datamodel\Sound.cs" />
+    <Compile Include="Polytoria\Datamodel\Spotlight.cs" />
+    <Compile Include="Polytoria\Datamodel\StringValue.cs" />
+    <Compile Include="Polytoria\Datamodel\SunLight.cs" />
+    <Compile Include="Polytoria\Datamodel\SyncMode.cs" />
+    <Compile Include="Polytoria\Datamodel\Text3D.cs" />
+    <Compile Include="Polytoria\Datamodel\TextFontPreset.cs" />
+    <Compile Include="Polytoria\Datamodel\TextJustify.cs" />
+    <Compile Include="Polytoria\Datamodel\TextVerticalAlign.cs" />
+    <Compile Include="Polytoria\Datamodel\Tool.cs" />
+    <Compile Include="Polytoria\Datamodel\Truss.cs" />
+    <Compile Include="Polytoria\Datamodel\UIButton.cs" />
+    <Compile Include="Polytoria\Datamodel\UIField.cs" />
+    <Compile Include="Polytoria\Datamodel\UIHorizontalLayout.cs" />
+    <Compile Include="Polytoria\Datamodel\UIHVLayout.cs" />
+    <Compile Include="Polytoria\Datamodel\UIImage.cs" />
+    <Compile Include="Polytoria\Datamodel\UILabel.cs" />
+    <Compile Include="Polytoria\Datamodel\UITextInput.cs" />
+    <Compile Include="Polytoria\Datamodel\UIVerticalLayout.cs" />
+    <Compile Include="Polytoria\Datamodel\UIView.cs" />
+    <Compile Include="Polytoria\Datamodel\ValueBase.cs" />
+    <Compile Include="Polytoria\Datamodel\Vector3Value.cs" />
+    <Compile Include="Polytoria\Helpers\CloseOnClickOutside.cs" />
+    <Compile Include="Polytoria\Helpers\RectTransformExtensions.cs" />
+    <Compile Include="Polytoria\Lua\LuaBounds.cs" />
+    <Compile Include="Polytoria\Lua\LuaCallbackParameter.cs" />
+    <Compile Include="Polytoria\Lua\LuaColor3.cs" />
+    <Compile Include="Polytoria\Lua\LuaEvent.cs" />
+    <Compile Include="Polytoria\Lua\LuaEventParameter.cs" />
+    <Compile Include="Polytoria\Lua\LuaJSON.cs" />
+    <Compile Include="Polytoria\Lua\LuaQuaternion.cs" />
+    <Compile Include="Polytoria\Lua\LuaVector2.cs" />
+    <Compile Include="Polytoria\Lua\LuaVector3.cs" />
+    <Compile Include="Polytoria\Lua\LuaVector4.cs" />
+    <Compile Include="Polytoria\Networking\AuthUserData.cs" />
+    <Compile Include="Polytoria\Networking\PTAuthenticator.cs" />
+    <Compile Include="Polytoria\Networking\PTNetworkManager.cs" />
+    <Compile Include="Polytoria\Types\ColorRange.cs" />
+    <Compile Include="Polytoria\Types\FootstepCollection.cs" />
+    <Compile Include="Polytoria\Types\FootstepMaterial.cs" />
+    <Compile Include="Polytoria\Types\FootstepSounds.cs" />
+    <Compile Include="Polytoria\Types\NumberRange.cs" />
+    <Compile Include="Polytoria\UI\ChatMessageRef.cs" />
+    <Compile Include="Polytoria\UI\ChatWindow.cs" />
+    <Compile Include="Polytoria\UI\ChatWindowState.cs" />
+    <Compile Include="Polytoria\UI\CreatorViewport.cs" />
+    <Compile Include="Polytoria\UI\MenuButtonAnimation.cs" />
+    <Compile Include="Polytoria\UI\SlashCommand.cs" />
+    <Compile Include="Polytoria\UI\UICommandList.cs" />
+    <Compile Include="Polytoria\UI\UICommandListItem.cs" />
+    <Compile Include="Polytoria\UI\UISpeechBubble.cs" />
+    <Compile Include="Polytoria\UI\UIStaminaBar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasesService.cs" />
+    <Compile Include="RLD\AABB.cs" />
+    <Compile Include="RLD\ArcEpsilon.cs" />
+    <Compile Include="RLD\ArcMath.cs" />
+    <Compile Include="RLD\ArcShape2D.cs" />
+    <Compile Include="RLD\ArcShape3D.cs" />
+    <Compile Include="RLD\Axis.cs" />
+    <Compile Include="RLD\AxisDescriptor.cs" />
+    <Compile Include="RLD\AxisHelper.cs" />
+    <Compile Include="RLD\AxisSign.cs" />
+    <Compile Include="RLD\BoxCorner.cs" />
+    <Compile Include="RLD\BoxEpsilon.cs" />
+    <Compile Include="RLD\BoxFace.cs" />
+    <Compile Include="RLD\BoxFaceAreaDesc.cs" />
+    <Compile Include="RLD\BoxFaceAreaType.cs" />
+    <Compile Include="RLD\BoxFaceDesc.cs" />
+    <Compile Include="RLD\BoxGizmo.cs" />
+    <Compile Include="RLD\BoxGizmoHotkeys.cs" />
+    <Compile Include="RLD\BoxGizmoLookAndFeel3D.cs" />
+    <Compile Include="RLD\BoxGizmoSettings3D.cs" />
+    <Compile Include="RLD\BoxMath.cs" />
+    <Compile Include="RLD\BoxMesh.cs" />
+    <Compile Include="RLD\BoxShape3D.cs" />
+    <Compile Include="RLD\CameraBackgroundSettings.cs" />
+    <Compile Include="RLD\CameraCanProcessInputHandler.cs" />
+    <Compile Include="RLD\CameraCanUseScrollWheelHandler.cs" />
+    <Compile Include="RLD\CameraEx.cs" />
+    <Compile Include="RLD\CameraFocus.cs" />
+    <Compile Include="RLD\CameraFocusMode.cs" />
+    <Compile Include="RLD\CameraFocusSettings.cs" />
+    <Compile Include="RLD\CameraHotkeys.cs" />
+    <Compile Include="RLD\CameraLookAroundMode.cs" />
+    <Compile Include="RLD\CameraLookAroundSettings.cs" />
+    <Compile Include="RLD\CameraMoveSettings.cs" />
+    <Compile Include="RLD\CameraOrbitMode.cs" />
+    <Compile Include="RLD\CameraOrbitSettings.cs" />
+    <Compile Include="RLD\CameraPanMode.cs" />
+    <Compile Include="RLD\CameraPanSettings.cs" />
+    <Compile Include="RLD\CameraPrjSwitchTransition.cs" />
+    <Compile Include="RLD\CameraProjectionSwitchBeginHandler.cs" />
+    <Compile Include="RLD\CameraProjectionSwitchEndHandler.cs" />
+    <Compile Include="RLD\CameraProjectionSwitchMode.cs" />
+    <Compile Include="RLD\CameraProjectionSwitchSettings.cs" />
+    <Compile Include="RLD\CameraProjectionSwitchUpdateHandler.cs" />
+    <Compile Include="RLD\CameraRotationSwitchMode.cs" />
+    <Compile Include="RLD\CameraRotationSwitchSettings.cs" />
+    <Compile Include="RLD\CameraSettings.cs" />
+    <Compile Include="RLD\CameraViewVolume.cs" />
+    <Compile Include="RLD\CameraZoomMode.cs" />
+    <Compile Include="RLD\CameraZoomSettings.cs" />
+    <Compile Include="RLD\CanUndoRedoHandler.cs" />
+    <Compile Include="RLD\CircleEpsilon.cs" />
+    <Compile Include="RLD\CircleExtent.cs" />
+    <Compile Include="RLD\CircleMath.cs" />
+    <Compile Include="RLD\CircleMesh.cs" />
+    <Compile Include="RLD\CircleShape2D.cs" />
+    <Compile Include="RLD\CircleShape3D.cs" />
+    <Compile Include="RLD\ColorEx.cs" />
+    <Compile Include="RLD\ColorRef.cs" />
+    <Compile Include="RLD\ColorTransition.cs" />
+    <Compile Include="RLD\ConeBaseExtent.cs" />
+    <Compile Include="RLD\ConeEpsilon.cs" />
+    <Compile Include="RLD\ConeMath.cs" />
+    <Compile Include="RLD\ConeShape2D.cs" />
+    <Compile Include="RLD\ConeShape3D.cs" />
+    <Compile Include="RLD\CylinderEpsilon.cs" />
+    <Compile Include="RLD\CylinderExtent.cs" />
+    <Compile Include="RLD\CylinderMath.cs" />
+    <Compile Include="RLD\CylinderMesh.cs" />
+    <Compile Include="RLD\CylinderShape3D.cs" />
+    <Compile Include="RLD\CylTorusShape3D.cs" />
+    <Compile Include="RLD\DeleteSelectedObjectsAction.cs" />
+    <Compile Include="RLD\DeviceObjectGrabSession.cs" />
+    <Compile Include="RLD\DuplicateObjectsAction.cs" />
+    <Compile Include="RLD\DynamicConvertSettings.cs" />
+    <Compile Include="RLD\EditorPrefabPreviewGen.cs" />
+    <Compile Include="RLD\EditorToolbar.cs" />
+    <Compile Include="RLD\EditorToolbarTab.cs" />
+    <Compile Include="RLD\EqTriangle2D.cs" />
+    <Compile Include="RLD\EqTriangle3D.cs" />
+    <Compile Include="RLD\EqTriangleEdge.cs" />
+    <Compile Include="RLD\EqTrianglePoint.cs" />
+    <Compile Include="RLD\ExtrudeEpsThreshold.cs" />
+    <Compile Include="RLD\GameObjectEx.cs" />
+    <Compile Include="RLD\GameObjectRayHit.cs" />
+    <Compile Include="RLD\GameObjectType.cs" />
+    <Compile Include="RLD\GameObjectTypeHelper.cs" />
+    <Compile Include="RLD\Gizmo.cs" />
+    <Compile Include="RLD\GizmoArrowCap2DController.cs" />
+    <Compile Include="RLD\GizmoBehaviorInitParams.cs" />
+    <Compile Include="RLD\GizmoBehaviour.cs" />
+    <Compile Include="RLD\GizmoBehaviourCollection.cs" />
+    <Compile Include="RLD\GizmoBoxCap3DController.cs" />
+    <Compile Include="RLD\GizmoBoxLineSlider2DController.cs" />
+    <Compile Include="RLD\GizmoBoxLineSlider3DController.cs" />
+    <Compile Include="RLD\GizmoBoxQuad3DBorderController.cs" />
+    <Compile Include="RLD\GizmoCap.cs" />
+    <Compile Include="RLD\GizmoCap2D.cs" />
+    <Compile Include="RLD\GizmoCap2DCollection.cs" />
+    <Compile Include="RLD\GizmoCap2DController.cs" />
+    <Compile Include="RLD\GizmoCap2DControllerData.cs" />
+    <Compile Include="RLD\GizmoCap2DLookAndFeel.cs" />
+    <Compile Include="RLD\GizmoCap2DType.cs" />
+    <Compile Include="RLD\GizmoCap3D.cs" />
+    <Compile Include="RLD\GizmoCap3DCollection.cs" />
+    <Compile Include="RLD\GizmoCap3DController.cs" />
+    <Compile Include="RLD\GizmoCap3DControllerData.cs" />
+    <Compile Include="RLD\GizmoCap3DLookAndFeel.cs" />
+    <Compile Include="RLD\GizmoCap3DType.cs" />
+    <Compile Include="RLD\GizmoCircle2DBorder.cs" />
+    <Compile Include="RLD\GizmoCircle2DBorderController.cs" />
+    <Compile Include="RLD\GizmoCircle2DBorderControllerData.cs" />
+    <Compile Include="RLD\GizmoCircle2DBorderType.cs" />
+    <Compile Include="RLD\GizmoCircle3DBorder.cs" />
+    <Compile Include="RLD\GizmoCircle3DBorderController.cs" />
+    <Compile Include="RLD\GizmoCircle3DBorderControllerData.cs" />
+    <Compile Include="RLD\GizmoCircle3DBorderType.cs" />
+    <Compile Include="RLD\GizmoCircleCap2DController.cs" />
+    <Compile Include="RLD\GizmoCirclePlaneSlider2DController.cs" />
+    <Compile Include="RLD\GizmoCirclePlaneSlider3DController.cs" />
+    <Compile Include="RLD\GizmoCircularMaterial.cs" />
+    <Compile Include="RLD\GizmoCollectionEnabledStateSnapshot.cs" />
+    <Compile Include="RLD\GizmoConeCap3DController.cs" />
+    <Compile Include="RLD\GizmoCylinderLineSlider3DController.cs" />
+    <Compile Include="RLD\GizmoCylindricalTorusCircle3DBorderController.cs" />
+    <Compile Include="RLD\GizmoDblAxisOffsetDrag3D.cs" />
+    <Compile Include="RLD\GizmoDblAxisRotationDrag3D.cs" />
+    <Compile Include="RLD\GizmoDblAxisScaleDrag3D.cs" />
+    <Compile Include="RLD\GizmoDimension.cs" />
+    <Compile Include="RLD\GizmoDragChannel.cs" />
+    <Compile Include="RLD\GizmoDragInfo.cs" />
+    <Compile Include="RLD\GizmoDragSession.cs" />
+    <Compile Include="RLD\GizmoEngineCanDoHoverUpdateHandler.cs" />
+    <Compile Include="RLD\GizmoEngineSettings.cs" />
+    <Compile Include="RLD\GizmoEntityTransformChangedHandler.cs" />
+    <Compile Include="RLD\GizmoFillMode2D.cs" />
+    <Compile Include="RLD\GizmoFillMode3D.cs" />
+    <Compile Include="RLD\GizmoHandle.cs" />
+    <Compile Include="RLD\GizmoHandleCanHoverHandler.cs" />
+    <Compile Include="RLD\GizmoHandleCollection.cs" />
+    <Compile Include="RLD\GizmoHandleHoverData.cs" />
+    <Compile Include="RLD\GizmoHandleId.cs" />
+    <Compile Include="RLD\GizmoHandleShape2D.cs" />
+    <Compile Include="RLD\GizmoHandleShape3D.cs" />
+    <Compile Include="RLD\GizmoHoverInfo.cs" />
+    <Compile Include="RLD\GizmoLabelMaterial.cs" />
+    <Compile Include="RLD\GizmoLine2DType.cs" />
+    <Compile Include="RLD\GizmoLine3DType.cs" />
+    <Compile Include="RLD\GizmoLineMaterial.cs" />
+    <Compile Include="RLD\GizmoLineSlider2D.cs" />
+    <Compile Include="RLD\GizmoLineSlider2DCollection.cs" />
+    <Compile Include="RLD\GizmoLineSlider2DController.cs" />
+    <Compile Include="RLD\GizmoLineSlider2DControllerData.cs" />
+    <Compile Include="RLD\GizmoLineSlider2DLookAndFeel.cs" />
+    <Compile Include="RLD\GizmoLineSlider2DSettings.cs" />
+    <Compile Include="RLD\GizmoLineSlider3D.cs" />
+    <Compile Include="RLD\GizmoLineSlider3DCollection.cs" />
+    <Compile Include="RLD\GizmoLineSlider3DController.cs" />
+    <Compile Include="RLD\GizmoLineSlider3DControllerData.cs" />
+    <Compile Include="RLD\GizmoLineSlider3DLookAndFeel.cs" />
+    <Compile Include="RLD\GizmoLineSlider3DSettings.cs" />
+    <Compile Include="RLD\GizmoMultiAxisScaleMode.cs" />
+    <Compile Include="RLD\GizmoObjectTransformPivot.cs" />
+    <Compile Include="RLD\GizmoObjectVertexSnapDrag3D.cs" />
+    <Compile Include="RLD\GizmoObjectVertexSnapSettings.cs" />
+    <Compile Include="RLD\GizmoOverrideColor.cs" />
+    <Compile Include="RLD\GizmoPlane2DType.cs" />
+    <Compile Include="RLD\GizmoPlane3DType.cs" />
+    <Compile Include="RLD\GizmoPlaneDrag3D.cs" />
+    <Compile Include="RLD\GizmoPlaneSlider2D.cs" />
+    <Compile Include="RLD\GizmoPlaneSlider2DController.cs" />
+    <Compile Include="RLD\GizmoPlaneSlider2DControllerData.cs" />
+    <Compile Include="RLD\GizmoPlaneSlider2DLookAndFeel.cs" />
+    <Compile Include="RLD\GizmoPlaneSlider2DSettings.cs" />
+    <Compile Include="RLD\GizmoPlaneSlider3D.cs" />
+    <Compile Include="RLD\GizmoPlaneSlider3DCollection.cs" />
+    <Compile Include="RLD\GizmoPlaneSlider3DController.cs" />
+    <Compile Include="RLD\GizmoPlaneSlider3DControllerData.cs" />
+    <Compile Include="RLD\GizmoPlaneSlider3DLookAndFeel.cs" />
+    <Compile Include="RLD\GizmoPlaneSlider3DSettings.cs" />
+    <Compile Include="RLD\GizmoPolygon2DBorder.cs" />
+    <Compile Include="RLD\GizmoPolygon2DBorderController.cs" />
+    <Compile Include="RLD\GizmoPolygon2DBorderControllerData.cs" />
+    <Compile Include="RLD\GizmoPolygon2DBorderType.cs" />
+    <Compile Include="RLD\GizmoPolygonPlaneSlider2DController.cs" />
+    <Compile Include="RLD\GizmoPostDisabledHandler.cs" />
+    <Compile Include="RLD\GizmoPostDragBeginAttemptHandler.cs" />
+    <Compile Include="RLD\GizmoPostDragBeginHandler.cs" />
+    <Compile Include="RLD\GizmoPostDragEndHandler.cs" />
+    <Compile Include="RLD\GizmoPostDragUpdateHandler.cs" />
+    <Compile Include="RLD\GizmoPostEnabledHandler.cs" />
+    <Compile Include="RLD\GizmoPostHandlePickedHandler.cs" />
+    <Compile Include="RLD\GizmoPostHoverEnterHandler.cs" />
+    <Compile Include="RLD\GizmoPostHoverExitHandler.cs" />
+    <Compile Include="RLD\GizmoPostUpdateEndHandler.cs" />
+    <Compile Include="RLD\GizmoPreDragBeginAttemptHandler.cs" />
+    <Compile Include="RLD\GizmoPreDragBeginHandler.cs" />
+    <Compile Include="RLD\GizmoPreDragEndHandler.cs" />
+    <Compile Include="RLD\GizmoPreDragUpdateHandler.cs" />
+    <Compile Include="RLD\GizmoPreHandlePickedHandler.cs" />
+    <Compile Include="RLD\GizmoPreHoverEnterHandler.cs" />
+    <Compile Include="RLD\GizmoPreHoverExitHandler.cs" />
+    <Compile Include="RLD\GizmoPreUpdateBeginHandler.cs" />
+    <Compile Include="RLD\GizmoPyramidCap3DController.cs" />
+    <Compile Include="RLD\GizmoQuad2DBorder.cs" />
+    <Compile Include="RLD\GizmoQuad2DBorderController.cs" />
+    <Compile Include="RLD\GizmoQuad2DBorderControllerData.cs" />
+    <Compile Include="RLD\GizmoQuad2DBorderType.cs" />
+    <Compile Include="RLD\GizmoQuad3DBorder.cs" />
+    <Compile Include="RLD\GizmoQuad3DBorderController.cs" />
+    <Compile Include="RLD\GizmoQuad3DBorderControllerData.cs" />
+    <Compile Include="RLD\GizmoQuad3DBorderType.cs" />
+    <Compile Include="RLD\GizmoQuadCap2DController.cs" />
+    <Compile Include="RLD\GizmoQuadPlaneSlider2DController.cs" />
+    <Compile Include="RLD\GizmoQuadPlaneSlider3DController.cs" />
+    <Compile Include="RLD\GizmoRATriangle3DBorder.cs" />
+    <Compile Include="RLD\GizmoRATriangle3DBorderController.cs" />
+    <Compile Include="RLD\GizmoRATriangle3DBorderControllerData.cs" />
+    <Compile Include="RLD\GizmoRATriangle3DBorderType.cs" />
+    <Compile Include="RLD\GizmoRATrianglePlaneSlider3DController.cs" />
+    <Compile Include="RLD\GizmoRotationArc2D.cs" />
+    <Compile Include="RLD\GizmoRotationArc2DLookAndFeel.cs" />
+    <Compile Include="RLD\GizmoRotationArc3D.cs" />
+    <Compile Include="RLD\GizmoRotationArc3DLookAndFeel.cs" />
+    <Compile Include="RLD\GizmoRotationArcFillFlags.cs" />
+    <Compile Include="RLD\GizmoScaleGuide.cs" />
+    <Compile Include="RLD\GizmoScaleGuideLookAndFeel.cs" />
+    <Compile Include="RLD\GizmoScalerHandle.cs" />
+    <Compile Include="RLD\GizmoScreenDrag.cs" />
+    <Compile Include="RLD\GizmosEnginePipelineStage.cs" />
+    <Compile Include="RLD\GizmoSglAxisOffsetDrag3D.cs" />
+    <Compile Include="RLD\GizmoSglAxisRotationDrag3D.cs" />
+    <Compile Include="RLD\GizmoSglAxisScaleDrag3D.cs" />
+    <Compile Include="RLD\GizmoShadeMode.cs" />
+    <Compile Include="RLD\GizmoSlider.cs" />
+    <Compile Include="RLD\GizmoSnapMode.cs" />
+    <Compile Include="RLD\GizmoSolidMaterial.cs" />
+    <Compile Include="RLD\GizmoSpace.cs" />
+    <Compile Include="RLD\GizmoSphereCap3DController.cs" />
+    <Compile Include="RLD\GizmoThickPolygon2DBorderController.cs" />
+    <Compile Include="RLD\GizmoThinCircle2DBorderController.cs" />
+    <Compile Include="RLD\GizmoThinCircle3DBorderController.cs" />
+    <Compile Include="RLD\GizmoThinLineSlider2DController.cs" />
+    <Compile Include="RLD\GizmoThinLineSlider3DController.cs" />
+    <Compile Include="RLD\GizmoThinPolygon2DBorderController.cs" />
+    <Compile Include="RLD\GizmoThinQuad2DBorderController.cs" />
+    <Compile Include="RLD\GizmoThinQuad3DBorderController.cs" />
+    <Compile Include="RLD\GizmoThinRATriangle3DBorderController.cs" />
+    <Compile Include="RLD\GizmoTorusCircle3DBorderController.cs" />
+    <Compile Include="RLD\GizmoTransform.cs" />
+    <Compile Include="RLD\GizmoTransformAxisMap2D.cs" />
+    <Compile Include="RLD\GizmoTransformAxisMap3D.cs" />
+    <Compile Include="RLD\GizmoTriPrismCap3DController.cs" />
+    <Compile Include="RLD\GizmoUniformScaleDrag3D.cs" />
+    <Compile Include="RLD\GLRenderer.cs" />
+    <Compile Include="RLD\GraphicsEx.cs" />
+    <Compile Include="RLD\GUIEx.cs" />
+    <Compile Include="RLD\Hotkeys.cs" />
+    <Compile Include="RLD\HotkeysStaticData.cs" />
+    <Compile Include="RLD\IGizmoBehaviour.cs" />
+    <Compile Include="RLD\IGizmoCap.cs" />
+    <Compile Include="RLD\IGizmoCap2DController.cs" />
+    <Compile Include="RLD\IGizmoCap3DController.cs" />
+    <Compile Include="RLD\IGizmoCircle2DBorderController.cs" />
+    <Compile Include="RLD\IGizmoCircle3DBorderController.cs" />
+    <Compile Include="RLD\IGizmoDragSession.cs" />
+    <Compile Include="RLD\IGizmoHandle.cs" />
+    <Compile Include="RLD\IGizmoLineSlider2DController.cs" />
+    <Compile Include="RLD\IGizmoLineSlider3DController.cs" />
+    <Compile Include="RLD\IGizmoPlaneSlider2DController.cs" />
+    <Compile Include="RLD\IGizmoPlaneSlider3DController.cs" />
+    <Compile Include="RLD\IGizmoPolygon2DBorderController.cs" />
+    <Compile Include="RLD\IGizmoQuad2DBorderController.cs" />
+    <Compile Include="RLD\IGizmoQuad3DBorderController.cs" />
+    <Compile Include="RLD\IGizmoRATriangle3DBorderController.cs" />
+    <Compile Include="RLD\IGizmoSlider.cs" />
+    <Compile Include="RLD\IHoverableSceneEntityContainer.cs" />
+    <Compile Include="RLD\IInputDevice.cs" />
+    <Compile Include="RLD\InputDeviceBase.cs" />
+    <Compile Include="RLD\InputDeviceDeltaCapture.cs" />
+    <Compile Include="RLD\InputDeviceDoubleTapHandler.cs" />
+    <Compile Include="RLD\InputDevicePlaneDragSession3D.cs" />
+    <Compile Include="RLD\InputDeviceScreenDragSession.cs" />
+    <Compile Include="RLD\InputDeviceType.cs" />
+    <Compile Include="RLD\IObjectCollectionGizmoController.cs" />
+    <Compile Include="RLD\IRLDApplication.cs" />
+    <Compile Include="RLD\IRTObjectSelectionListener.cs" />
+    <Compile Include="RLD\IRTTransformGizmoListener.cs" />
+    <Compile Include="RLD\ISceneGizmo.cs" />
+    <Compile Include="RLD\ISceneGizmoCamViewportUpdater.cs" />
+    <Compile Include="RLD\IUndoRedoAction.cs" />
+    <Compile Include="RLD\IXZGrid.cs" />
+    <Compile Include="RLD\LayerEx.cs" />
+    <Compile Include="RLD\LineMesh.cs" />
+    <Compile Include="RLD\LocalGizmoTransformSnapshot.cs" />
+    <Compile Include="RLD\LocalTransformSnapshot.cs" />
+    <Compile Include="RLD\MaterialEx.cs" />
+    <Compile Include="RLD\MaterialPool.cs" />
+    <Compile Include="RLD\MathEx.cs" />
+    <Compile Include="RLD\Matrix4x4Ex.cs" />
+    <Compile Include="RLD\MeshPool.cs" />
+    <Compile Include="RLD\MeshRayHit.cs" />
+    <Compile Include="RLD\MeshTransform.cs" />
+    <Compile Include="RLD\MeshTree.cs" />
+    <Compile Include="RLD\MeshTriangle.cs" />
+    <Compile Include="RLD\MeshVertexChunk.cs" />
+    <Compile Include="RLD\MeshVertexChunkCollection.cs" />
+    <Compile Include="RLD\MeshVertexChunkCollectionDb.cs" />
+    <Compile Include="RLD\MonoSingleton.cs" />
+    <Compile Include="RLD\MouseButton.cs" />
+    <Compile Include="RLD\MouseInputDevice.cs" />
+    <Compile Include="RLD\MoveGizmo.cs" />
+    <Compile Include="RLD\MoveGizmoHotkeys.cs" />
+    <Compile Include="RLD\MoveGizmoLookAndFeel2D.cs" />
+    <Compile Include="RLD\MoveGizmoLookAndFeel3D.cs" />
+    <Compile Include="RLD\MoveGizmoSettings2D.cs" />
+    <Compile Include="RLD\MoveGizmoSettings3D.cs" />
+    <Compile Include="RLD\MultiSelectOverlapMode.cs" />
+    <Compile Include="RLD\MultiSelectShape.cs" />
+    <Compile Include="RLD\NumSnapSteps.cs" />
+    <Compile Include="RLD\OBB.cs" />
+    <Compile Include="RLD\Object2ObjectSnap.cs" />
+    <Compile Include="RLD\Object2ObjectSnapData.cs" />
+    <Compile Include="RLD\Object2ObjectSnapDataDb.cs" />
+    <Compile Include="RLD\Object2ObjectSnapHotkeys.cs" />
+    <Compile Include="RLD\Object2ObjectSnapSession.cs" />
+    <Compile Include="RLD\Object2ObjectSnapSessionBeginHandler.cs" />
+    <Compile Include="RLD\Object2ObjectSnapSessionEndHandler.cs" />
+    <Compile Include="RLD\Object2ObjectSnapSettings.cs" />
+    <Compile Include="RLD\ObjectAlign.cs" />
+    <Compile Include="RLD\ObjectBounds.cs" />
+    <Compile Include="RLD\ObjectCloning.cs" />
+    <Compile Include="RLD\ObjectDeselectEventArgs.cs" />
+    <Compile Include="RLD\ObjectDeselectReason.cs" />
+    <Compile Include="RLD\ObjectExtrudeGizmo.cs" />
+    <Compile Include="RLD\ObjectExtrudeGizmoDragEnd.cs" />
+    <Compile Include="RLD\ObjectExtrudeGizmoExtrudeUpdateHandler.cs" />
+    <Compile Include="RLD\ObjectExtrudeGizmoHotkeys.cs" />
+    <Compile Include="RLD\ObjectExtrudeGizmoLookAndFeel3D.cs" />
+    <Compile Include="RLD\ObjectGrabHotkeys.cs" />
+    <Compile Include="RLD\ObjectGrabLookAndFeel.cs" />
+    <Compile Include="RLD\ObjectGrabSessionBeginHandler.cs" />
+    <Compile Include="RLD\ObjectGrabSessionEndHandler.cs" />
+    <Compile Include="RLD\ObjectGrabSettings.cs" />
+    <Compile Include="RLD\ObjectGrabSurfaceFlags.cs" />
+    <Compile Include="RLD\ObjectGridSnapHotkeys.cs" />
+    <Compile Include="RLD\ObjectGridSnapLookAndFeel.cs" />
+    <Compile Include="RLD\ObjectGridSnapSession.cs" />
+    <Compile Include="RLD\ObjectGridSnapSessionBeginHandler.cs" />
+    <Compile Include="RLD\ObjectGridSnapSessionEndHandler.cs" />
+    <Compile Include="RLD\ObjectKeyRotationSettings.cs" />
+    <Compile Include="RLD\ObjectLayerGrabSettings.cs" />
+    <Compile Include="RLD\ObjectPool.cs" />
+    <Compile Include="RLD\ObjectPositionCalculator.cs" />
+    <Compile Include="RLD\ObjectPreDeselectCustomizeInfo.cs" />
+    <Compile Include="RLD\ObjectPreSelectCustomizeInfo.cs" />
+    <Compile Include="RLD\ObjectRotationPivot.cs" />
+    <Compile Include="RLD\ObjectSelectEntireHierarchy.cs" />
+    <Compile Include="RLD\ObjectSelectEventArgs.cs" />
+    <Compile Include="RLD\ObjectSelectionCanClickSelectDeselectHandler.cs" />
+    <Compile Include="RLD\ObjectSelectionCanMultiSelectDeselectHandler.cs" />
+    <Compile Include="RLD\ObjectSelectionChangedEventArgs.cs" />
+    <Compile Include="RLD\ObjectSelectionChangedHandler.cs" />
+    <Compile Include="RLD\ObjectSelectionDeletedHandler.cs" />
+    <Compile Include="RLD\ObjectSelectionDisabled.cs" />
+    <Compile Include="RLD\ObjectSelectionDuplicatedHandler.cs" />
+    <Compile Include="RLD\ObjectSelectionDuplicationResult.cs" />
+    <Compile Include="RLD\ObjectSelectionEnabled.cs" />
+    <Compile Include="RLD\ObjectSelectionGizmoId.cs" />
+    <Compile Include="RLD\ObjectSelectionGizmosHotkeys.cs" />
+    <Compile Include="RLD\ObjectSelectionGizmosSnapshot.cs" />
+    <Compile Include="RLD\ObjectSelectionHotkeys.cs" />
+    <Compile Include="RLD\ObjectSelectionLookAndFeel.cs" />
+    <Compile Include="RLD\ObjectSelectionManipSession.cs" />
+    <Compile Include="RLD\ObjectSelectionManipSessionBeginHandler.cs" />
+    <Compile Include="RLD\ObjectSelectionManipSessionEndHandler.cs" />
+    <Compile Include="RLD\ObjectSelectionPreDeselectCustomizeHandler.cs" />
+    <Compile Include="RLD\ObjectSelectionPreSelectCustomizeHandler.cs" />
+    <Compile Include="RLD\ObjectSelectionRotatedHandler.cs" />
+    <Compile Include="RLD\ObjectSelectionRotationHotkeys.cs" />
+    <Compile Include="RLD\ObjectSelectionRotationSettings.cs" />
+    <Compile Include="RLD\ObjectSelectionSettings.cs" />
+    <Compile Include="RLD\ObjectSelectionSnapshot.cs" />
+    <Compile Include="RLD\ObjectSelectionWillBeDeletedHandler.cs" />
+    <Compile Include="RLD\ObjectSelectionWillBeDuplicatedHandler.cs" />
+    <Compile Include="RLD\ObjectSelectReason.cs" />
+    <Compile Include="RLD\ObjectSnap.cs" />
+    <Compile Include="RLD\ObjectSpawnUtil.cs" />
+    <Compile Include="RLD\ObjectSurfaceSnap.cs" />
+    <Compile Include="RLD\ObjectTransformGizmo.cs" />
+    <Compile Include="RLD\ObjectTransformGizmoSettings.cs" />
+    <Compile Include="RLD\ObjectVertexCollect.cs" />
+    <Compile Include="RLD\PivotPointShapeType.cs" />
+    <Compile Include="RLD\Plane2D.cs" />
+    <Compile Include="RLD\PlaneDescriptor.cs" />
+    <Compile Include="RLD\PlaneEx.cs" />
+    <Compile Include="RLD\PlaneId.cs" />
+    <Compile Include="RLD\PlaneIdHelper.cs" />
+    <Compile Include="RLD\PlaneMath.cs" />
+    <Compile Include="RLD\PlaneQuadrantId.cs" />
+    <Compile Include="RLD\PolygonEpsilon.cs" />
+    <Compile Include="RLD\PolygonMath.cs" />
+    <Compile Include="RLD\PolygonShape2D.cs" />
+    <Compile Include="RLD\PostGizmoTransformsChangedAction.cs" />
+    <Compile Include="RLD\PostObjectSelectionChangedAction.cs" />
+    <Compile Include="RLD\PostObjectSpawnAction.cs" />
+    <Compile Include="RLD\PostObjectTransformsChangedAction.cs" />
+    <Compile Include="RLD\PrefabCreatedInLibHandler.cs" />
+    <Compile Include="RLD\PrefabLibClearedHandler.cs" />
+    <Compile Include="RLD\PrefabLibDbPrefabSpawnedHander.cs" />
+    <Compile Include="RLD\PrefabLibDbSettings.cs" />
+    <Compile Include="RLD\PrefabPreviewLookAndFeel.cs" />
+    <Compile Include="RLD\PrefabRemovedFromLibHandler.cs" />
+    <Compile Include="RLD\PrefabSpawnSnap.cs" />
+    <Compile Include="RLD\PrimitiveFactory.cs" />
+    <Compile Include="RLD\Priority.cs" />
+    <Compile Include="RLD\PrismEpsilon.cs" />
+    <Compile Include="RLD\PrismMath.cs" />
+    <Compile Include="RLD\PrismMesh.cs" />
+    <Compile Include="RLD\PyramidBaseCorner.cs" />
+    <Compile Include="RLD\PyramidEpsilon.cs" />
+    <Compile Include="RLD\PyramidMath.cs" />
+    <Compile Include="RLD\PyramidMesh.cs" />
+    <Compile Include="RLD\PyramidShape3D.cs" />
+    <Compile Include="RLD\QuadCorner.cs" />
+    <Compile Include="RLD\QuadEpsilon.cs" />
+    <Compile Include="RLD\QuadMath.cs" />
+    <Compile Include="RLD\QuadMesh.cs" />
+    <Compile Include="RLD\QuadShape2D.cs" />
+    <Compile Include="RLD\QuadShape3D.cs" />
+    <Compile Include="RLD\QuaternionEx.cs" />
+    <Compile Include="RLD\QuaternionRef.cs" />
+    <Compile Include="RLD\RayEx.cs" />
+    <Compile Include="RLD\RectCornerPoint.cs" />
+    <Compile Include="RLD\RectEx.cs" />
+    <Compile Include="RLD\RedoEndHandler.cs" />
+    <Compile Include="RLD\RedoStartHandler.cs" />
+    <Compile Include="RLD\RenderPipelineId.cs" />
+    <Compile Include="RLD\RightAngTriangle2D.cs" />
+    <Compile Include="RLD\RightAngTriangle3D.cs" />
+    <Compile Include="RLD\RightAngTriPoint.cs" />
+    <Compile Include="RLD\RLDApp.cs" />
+    <Compile Include="RLD\RLDAppInitializedHandler.cs" />
+    <Compile Include="RLD\RLDMode.cs" />
+    <Compile Include="RLD\RotationGizmo.cs" />
+    <Compile Include="RLD\RotationGizmoHotkeys.cs" />
+    <Compile Include="RLD\RotationGizmoLookAndFeel3D.cs" />
+    <Compile Include="RLD\RotationGizmoSettings3D.cs" />
+    <Compile Include="RLD\RTActiveLibDropDown.cs" />
+    <Compile Include="RLD\RTCameraBackground.cs" />
+    <Compile Include="RLD\RTCameraViewports.cs" />
+    <Compile Include="RLD\RTCustomObjectInteractionSettings.cs" />
+    <Compile Include="RLD\RTFocusCamera.cs" />
+    <Compile Include="RLD\RTGizmosEngine.cs" />
+    <Compile Include="RLD\RTHoveredPrefabNameLabel.cs" />
+    <Compile Include="RLD\RTInputDevice.cs" />
+    <Compile Include="RLD\RTMesh.cs" />
+    <Compile Include="RLD\RTMeshCompiler.cs" />
+    <Compile Include="RLD\RTMeshDb.cs" />
+    <Compile Include="RLD\RTObjectGroupDb.cs" />
+    <Compile Include="RLD\RTObjectSelection.cs" />
+    <Compile Include="RLD\RTObjectSelectionGizmos.cs" />
+    <Compile Include="RLD\RTPrefab.cs" />
+    <Compile Include="RLD\RTPrefabLib.cs" />
+    <Compile Include="RLD\RTPrefabLibDb.cs" />
+    <Compile Include="RLD\RTPrefabLibDbUI.cs" />
+    <Compile Include="RLD\RTPrefabPreviewButton.cs" />
+    <Compile Include="RLD\RTPrefabScrollView.cs" />
+    <Compile Include="RLD\RTPrefabSearch.cs" />
+    <Compile Include="RLD\RTScene.cs" />
+    <Compile Include="RLD\RTSceneGizmoCamera.cs" />
+    <Compile Include="RLD\RTSceneGrid.cs" />
+    <Compile Include="RLD\RTSystemValues.cs" />
+    <Compile Include="RLD\RTUndoRedo.cs" />
+    <Compile Include="RLD\ScaleGizmo.cs" />
+    <Compile Include="RLD\ScaleGizmoHotkeys.cs" />
+    <Compile Include="RLD\ScaleGizmoLookAndFeel3D.cs" />
+    <Compile Include="RLD\ScaleGizmoSettings3D.cs" />
+    <Compile Include="RLD\SceneCanRenderCameraIconHandler.cs" />
+    <Compile Include="RLD\SceneGizmo.cs" />
+    <Compile Include="RLD\SceneGizmoAxisCap.cs" />
+    <Compile Include="RLD\SceneGizmoCamPrjSwitchLabel.cs" />
+    <Compile Include="RLD\SceneGizmoCamViewportUpdater.cs" />
+    <Compile Include="RLD\SceneGizmoCap.cs" />
+    <Compile Include="RLD\SceneGizmoLookAndFeel.cs" />
+    <Compile Include="RLD\SceneGizmoMidCap.cs" />
+    <Compile Include="RLD\SceneGizmoScreenCorner.cs" />
+    <Compile Include="RLD\SceneGridHotkeys.cs" />
+    <Compile Include="RLD\SceneLookAndFeel.cs" />
+    <Compile Include="RLD\SceneOverlapFilter.cs" />
+    <Compile Include="RLD\ScenePhysicsMode.cs" />
+    <Compile Include="RLD\SceneRaycastFilter.cs" />
+    <Compile Include="RLD\SceneRaycastHit.cs" />
+    <Compile Include="RLD\SceneRaycastPrecision.cs" />
+    <Compile Include="RLD\SceneSettings.cs" />
+    <Compile Include="RLD\SceneTree.cs" />
+    <Compile Include="RLD\SegmentEpsilon.cs" />
+    <Compile Include="RLD\SegmentMath.cs" />
+    <Compile Include="RLD\SegmentShape2D.cs" />
+    <Compile Include="RLD\SegmentShape3D.cs" />
+    <Compile Include="RLD\SelectionBoxBorderStyle.cs" />
+    <Compile Include="RLD\SelectionBoxRenderMode.cs" />
+    <Compile Include="RLD\SerializableDictionary.cs" />
+    <Compile Include="RLD\Settings.cs" />
+    <Compile Include="RLD\ShaderPool.cs" />
+    <Compile Include="RLD\Shape2D.cs" />
+    <Compile Include="RLD\Shape2DBorderDirection.cs" />
+    <Compile Include="RLD\Shape2DBorderType.cs" />
+    <Compile Include="RLD\Shape2DExtentPoint.cs" />
+    <Compile Include="RLD\Shape2DPtContainMode.cs" />
+    <Compile Include="RLD\Shape3D.cs" />
+    <Compile Include="RLD\Shape3DRaycastMode.cs" />
+    <Compile Include="RLD\Singleton.cs" />
+    <Compile Include="RLD\SnapMath.cs" />
+    <Compile Include="RLD\Sphere.cs" />
+    <Compile Include="RLD\SphereEpsilon.cs" />
+    <Compile Include="RLD\SphereMath.cs" />
+    <Compile Include="RLD\SphereMesh.cs" />
+    <Compile Include="RLD\SphereRightUpExtent.cs" />
+    <Compile Include="RLD\SphereShape3D.cs" />
+    <Compile Include="RLD\SphereTree.cs" />
+    <Compile Include="RLD\SphereTreeNode.cs" />
+    <Compile Include="RLD\SphereTreeNodeRayHit.cs" />
+    <Compile Include="RLD\SpriteEx.cs" />
+    <Compile Include="RLD\SpriteRendererEx.cs" />
+    <Compile Include="RLD\StringEx.cs" />
+    <Compile Include="RLD\StringMatch.cs" />
+    <Compile Include="RLD\TexturePool.cs" />
+    <Compile Include="RLD\TorusEpsilon.cs" />
+    <Compile Include="RLD\TorusExtent.cs" />
+    <Compile Include="RLD\TorusMath.cs" />
+    <Compile Include="RLD\TorusMesh.cs" />
+    <Compile Include="RLD\TorusShape3D.cs" />
+    <Compile Include="RLD\TouchInputDevice.cs" />
+    <Compile Include="RLD\TransformAxis.cs" />
+    <Compile Include="RLD\TransformEx.cs" />
+    <Compile Include="RLD\TriangleEpsilon.cs" />
+    <Compile Include="RLD\TriangleMath.cs" />
+    <Compile Include="RLD\TriangleMesh.cs" />
+    <Compile Include="RLD\TriangPrismShape3D.cs" />
+    <Compile Include="RLD\TriangularPrismCorner.cs" />
+    <Compile Include="RLD\UndoEndHandler.cs" />
+    <Compile Include="RLD\UndoRedoOpType.cs" />
+    <Compile Include="RLD\UndoStartHandler.cs" />
+    <Compile Include="RLD\UniqueNameGen.cs" />
+    <Compile Include="RLD\UniversalGizmo.cs" />
+    <Compile Include="RLD\UniversalGizmoConfig.cs" />
+    <Compile Include="RLD\UniversalGizmoHotkeys.cs" />
+    <Compile Include="RLD\UniversalGizmoLookAndFeel2D.cs" />
+    <Compile Include="RLD\UniversalGizmoLookAndFeel3D.cs" />
+    <Compile Include="RLD\UniversalGizmoSettings2D.cs" />
+    <Compile Include="RLD\UniversalGizmoSettings3D.cs" />
+    <Compile Include="RLD\UniversalGizmoSettingsCategory.cs" />
+    <Compile Include="RLD\UniversalGizmoSettingsType.cs" />
+    <Compile Include="RLD\Vec3Samples.cs" />
+    <Compile Include="RLD\Vector2Ex.cs" />
+    <Compile Include="RLD\Vector3Ex.cs" />
+    <Compile Include="RLD\Vector3Ref.cs" />
+    <Compile Include="RLD\Vector4Ex.cs" />
+    <Compile Include="RLD\WorldTransformSnapshot.cs" />
+    <Compile Include="RLD\XZGridCell.cs" />
+    <Compile Include="RLD\XZGridLookAndFeel.cs" />
+    <Compile Include="RLD\XZGridRayHit.cs" />
+    <Compile Include="RLD\XZGridSettings.cs" />
+    <Compile Include="RLD\YesNoAnswer.cs" />
+    <Compile Include="RoundModifier.cs" />
+    <Compile Include="ScreamStateBehaviour.cs" />
+    <Compile Include="UniformModifier.cs" />
+    <Compile Include="UnityEngine\UI\ProceduralImage\ModifierID.cs" />
+    <Compile Include="UnityEngine\UI\ProceduralImage\ProceduralImage.cs" />
+    <Compile Include="UnityEngine\UI\ProceduralImage\ProceduralImageInfo.cs" />
+    <Compile Include="UnityEngine\UI\ProceduralImage\ProceduralImageModifier.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="_PrivateImplementationDetails_.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

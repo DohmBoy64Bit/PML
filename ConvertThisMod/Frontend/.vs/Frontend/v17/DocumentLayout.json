@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SeanS\\.zenflow\\worktrees\\new-task-e2dc\\Frontend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7575659-3795-D654-7C13-9FD1B5855317}|Frontend.csproj|c:\\users\\seans\\.zenflow\\worktrees\\new-task-e2dc\\frontend\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F7575659-3795-D654-7C13-9FD1B5855317}|Frontend.csproj|solutionrelative:mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7575659-3795-D654-7C13-9FD1B5855317}|Frontend.csproj|c:\\users\\seans\\.zenflow\\worktrees\\new-task-e2dc\\frontend\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7575659-3795-D654-7C13-9FD1B5855317}|Frontend.csproj|solutionrelative:mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7575659-3795-D654-7C13-9FD1B5855317}|Frontend.csproj|c:\\users\\seans\\.zenflow\\worktrees\\new-task-e2dc\\frontend\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7575659-3795-D654-7C13-9FD1B5855317}|Frontend.csproj|solutionrelative:app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7575659-3795-D654-7C13-9FD1B5855317}|Frontend.csproj|c:\\users\\seans\\.zenflow\\worktrees\\new-task-e2dc\\frontend\\app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F7575659-3795-D654-7C13-9FD1B5855317}|Frontend.csproj|solutionrelative:app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\SeanS\\.zenflow\\worktrees\\new-task-e2dc\\Frontend\\App.axaml.cs",
+              "RelativeDocumentMoniker": "App.axaml.cs",
+              "ToolTip": "C:\\Users\\SeanS\\.zenflow\\worktrees\\new-task-e2dc\\Frontend\\App.axaml.cs",
+              "RelativeToolTip": "App.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T05:12:29.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\SeanS\\.zenflow\\worktrees\\new-task-e2dc\\Frontend\\App.axaml",
+              "RelativeDocumentMoniker": "App.axaml",
+              "ToolTip": "C:\\Users\\SeanS\\.zenflow\\worktrees\\new-task-e2dc\\Frontend\\App.axaml",
+              "RelativeToolTip": "App.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-07T05:12:25.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\SeanS\\.zenflow\\worktrees\\new-task-e2dc\\Frontend\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\SeanS\\.zenflow\\worktrees\\new-task-e2dc\\Frontend\\MainWindow.axaml.cs",
+              "RelativeToolTip": "MainWindow.axaml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T05:12:11.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\SeanS\\.zenflow\\worktrees\\new-task-e2dc\\Frontend\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "MainWindow.axaml",
+              "ToolTip": "C:\\Users\\SeanS\\.zenflow\\worktrees\\new-task-e2dc\\Frontend\\MainWindow.axaml",
+              "RelativeToolTip": "MainWindow.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-07T05:11:51.223Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

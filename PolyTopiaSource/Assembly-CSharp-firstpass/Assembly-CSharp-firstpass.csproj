@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D107878-DF0D-4424-AA82-86F5AF24D3A5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Assembly-CSharp-firstpass</RootNamespace>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Il2CppInterop.Common">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2CppInterop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Polytoria\Client\1.4.152\Mods\Deps\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DentedPixel\LeanDummy.cs" />
+    <Compile Include="Discord\AchievementManager.cs" />
+    <Compile Include="Discord\Activity.cs" />
+    <Compile Include="Discord\ActivityActionType.cs" />
+    <Compile Include="Discord\ActivityAssets.cs" />
+    <Compile Include="Discord\ActivityJoinRequestReply.cs" />
+    <Compile Include="Discord\ActivityManager.cs" />
+    <Compile Include="Discord\ActivityParty.cs" />
+    <Compile Include="Discord\ActivityPartyPrivacy.cs" />
+    <Compile Include="Discord\ActivitySecrets.cs" />
+    <Compile Include="Discord\ActivityTimestamps.cs" />
+    <Compile Include="Discord\ActivityType.cs" />
+    <Compile Include="Discord\ApplicationManager.cs" />
+    <Compile Include="Discord\Constants.cs" />
+    <Compile Include="Discord\CreateFlags.cs" />
+    <Compile Include="Discord\Discord.cs" />
+    <Compile Include="Discord\Entitlement.cs" />
+    <Compile Include="Discord\EntitlementType.cs" />
+    <Compile Include="Discord\FileStat.cs" />
+    <Compile Include="Discord\ImageDimensions.cs" />
+    <Compile Include="Discord\ImageHandle.cs" />
+    <Compile Include="Discord\ImageManager.cs" />
+    <Compile Include="Discord\ImageType.cs" />
+    <Compile Include="Discord\ImeUnderline.cs" />
+    <Compile Include="Discord\InputMode.cs" />
+    <Compile Include="Discord\InputModeType.cs" />
+    <Compile Include="Discord\KeyVariant.cs" />
+    <Compile Include="Discord\Lobby.cs" />
+    <Compile Include="Discord\LobbyManager.cs" />
+    <Compile Include="Discord\LobbyMemberTransaction.cs" />
+    <Compile Include="Discord\LobbySearchCast.cs" />
+    <Compile Include="Discord\LobbySearchComparison.cs" />
+    <Compile Include="Discord\LobbySearchDistance.cs" />
+    <Compile Include="Discord\LobbySearchQuery.cs" />
+    <Compile Include="Discord\LobbyTransaction.cs" />
+    <Compile Include="Discord\LobbyType.cs" />
+    <Compile Include="Discord\LogLevel.cs" />
+    <Compile Include="Discord\MonoPInvokeCallbackAttribute.cs" />
+    <Compile Include="Discord\MouseButton.cs" />
+    <Compile Include="Discord\NetworkManager.cs" />
+    <Compile Include="Discord\OAuth2Token.cs" />
+    <Compile Include="Discord\OverlayManager.cs" />
+    <Compile Include="Discord\PartySize.cs" />
+    <Compile Include="Discord\PremiumType.cs" />
+    <Compile Include="Discord\Presence.cs" />
+    <Compile Include="Discord\Rect.cs" />
+    <Compile Include="Discord\Relationship.cs" />
+    <Compile Include="Discord\RelationshipManager.cs" />
+    <Compile Include="Discord\RelationshipType.cs" />
+    <Compile Include="Discord\Result.cs" />
+    <Compile Include="Discord\ResultException.cs" />
+    <Compile Include="Discord\Sku.cs" />
+    <Compile Include="Discord\SkuPrice.cs" />
+    <Compile Include="Discord\SkuType.cs" />
+    <Compile Include="Discord\Status.cs" />
+    <Compile Include="Discord\StorageManager.cs" />
+    <Compile Include="Discord\StoreManager.cs" />
+    <Compile Include="Discord\User.cs" />
+    <Compile Include="Discord\UserAchievement.cs" />
+    <Compile Include="Discord\UserFlag.cs" />
+    <Compile Include="Discord\UserManager.cs" />
+    <Compile Include="Discord\VoiceManager.cs" />
+    <Compile Include="LeanAudio.cs" />
+    <Compile Include="LeanAudioOptions.cs" />
+    <Compile Include="LeanAudioStream.cs" />
+    <Compile Include="LeanProp.cs" />
+    <Compile Include="LeanSmooth.cs" />
+    <Compile Include="LeanTest.cs" />
+    <Compile Include="LeanTester.cs" />
+    <Compile Include="LeanTween.cs" />
+    <Compile Include="LeanTweenExt.cs" />
+    <Compile Include="LeanTweenType.cs" />
+    <Compile Include="LTBezier.cs" />
+    <Compile Include="LTBezierPath.cs" />
+    <Compile Include="LTDescr.cs" />
+    <Compile Include="LTDescrOptional.cs" />
+    <Compile Include="LTEvent.cs" />
+    <Compile Include="LTGUI.cs" />
+    <Compile Include="LTRect.cs" />
+    <Compile Include="LTSeq.cs" />
+    <Compile Include="LTSpline.cs" />
+    <Compile Include="LTUtility.cs" />
+    <Compile Include="MoonSharp\Interpreter\AutoDescribingUserDataDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\CallbackArguments.cs" />
+    <Compile Include="MoonSharp\Interpreter\CallbackFunction.cs" />
+    <Compile Include="MoonSharp\Interpreter\Closure.cs" />
+    <Compile Include="MoonSharp\Interpreter\CodeAnalysis\AstNode.cs" />
+    <Compile Include="MoonSharp\Interpreter\ColonOperatorBehaviour.cs" />
+    <Compile Include="MoonSharp\Interpreter\Compatibility\Framework.cs" />
+    <Compile Include="MoonSharp\Interpreter\Compatibility\Frameworks\FrameworkBase.cs" />
+    <Compile Include="MoonSharp\Interpreter\Compatibility\Frameworks\FrameworkClrBase.cs" />
+    <Compile Include="MoonSharp\Interpreter\Compatibility\Frameworks\FrameworkCurrent.cs" />
+    <Compile Include="MoonSharp\Interpreter\Compatibility\Frameworks\FrameworkReflectionBase.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\BasicModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\Bit32Module.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\CoroutineModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\DebugModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\DynamicModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\ErrorHandlingModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\IoModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\IO\BinaryEncoding.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\IO\FileUserData.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\IO\FileUserDataBase.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\IO\NamespaceDoc.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\IO\StandardIOFileUserDataBase.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\IO\StreamFileUserDataBase.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\JsonModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\LoadModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\MathModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\MetaTableModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\NamespaceDoc.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\OsSystemModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\OsTimeModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\StringLib\KopiLua_StringLib.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\StringLib\StringRange.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\StringModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\TableIteratorsModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\TableModule.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreLib\TableModule_Globals.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreModules.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoreModules_ExtensionMethods.cs" />
+    <Compile Include="MoonSharp\Interpreter\Coroutine.cs" />
+    <Compile Include="MoonSharp\Interpreter\CoroutineState.cs" />
+    <Compile Include="MoonSharp\Interpreter\DataStructs\FastStack.cs" />
+    <Compile Include="MoonSharp\Interpreter\DataStructs\FastStackDynamic.cs" />
+    <Compile Include="MoonSharp\Interpreter\DataStructs\LinkedListIndex.cs" />
+    <Compile Include="MoonSharp\Interpreter\DataStructs\MultiDictionary.cs" />
+    <Compile Include="MoonSharp\Interpreter\DataStructs\ReferenceEqualityComparer.cs" />
+    <Compile Include="MoonSharp\Interpreter\DataStructs\Slice.cs" />
+    <Compile Include="MoonSharp\Interpreter\DataType.cs" />
+    <Compile Include="MoonSharp\Interpreter\Debugging\DebuggerAction.cs" />
+    <Compile Include="MoonSharp\Interpreter\Debugging\DebuggerCaps.cs" />
+    <Compile Include="MoonSharp\Interpreter\Debugging\DebugService.cs" />
+    <Compile Include="MoonSharp\Interpreter\Debugging\IDebugger.cs" />
+    <Compile Include="MoonSharp\Interpreter\Debugging\NamespaceDoc.cs" />
+    <Compile Include="MoonSharp\Interpreter\Debugging\SourceCode.cs" />
+    <Compile Include="MoonSharp\Interpreter\Debugging\SourceRef.cs" />
+    <Compile Include="MoonSharp\Interpreter\Debugging\WatchItem.cs" />
+    <Compile Include="MoonSharp\Interpreter\Debugging\WatchType.cs" />
+    <Compile Include="MoonSharp\Interpreter\Diagnostics\NamespaceDoc.cs" />
+    <Compile Include="MoonSharp\Interpreter\Diagnostics\PerformanceCounter.cs" />
+    <Compile Include="MoonSharp\Interpreter\Diagnostics\PerformanceCounters\DummyPerformanceStopwatch.cs" />
+    <Compile Include="MoonSharp\Interpreter\Diagnostics\PerformanceCounters\GlobalPerformanceStopwatch.cs" />
+    <Compile Include="MoonSharp\Interpreter\Diagnostics\PerformanceCounters\IPerformanceStopwatch.cs" />
+    <Compile Include="MoonSharp\Interpreter\Diagnostics\PerformanceCounters\PerformanceStopwatch.cs" />
+    <Compile Include="MoonSharp\Interpreter\Diagnostics\PerformanceCounterType.cs" />
+    <Compile Include="MoonSharp\Interpreter\Diagnostics\PerformanceResult.cs" />
+    <Compile Include="MoonSharp\Interpreter\Diagnostics\PerformanceStatistics.cs" />
+    <Compile Include="MoonSharp\Interpreter\DynamicExpression.cs" />
+    <Compile Include="MoonSharp\Interpreter\DynamicExpressionException.cs" />
+    <Compile Include="MoonSharp\Interpreter\DynValue.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\BuildTimeScope.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\ClosureContext.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\IClosureBuilder.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\ILoop.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\InstructionFieldUsage.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\InstructionFieldUsage_Extensions.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\LoopTracker.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\RuntimeScopeBlock.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\RuntimeScopeFrame.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\Scopes\BuildTimeScopeBlock.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\Scopes\BuildTimeScopeFrame.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\ScriptLoadingContext.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\VM\ByteCode.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\VM\CallStackItem.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\VM\CallStackItemFlags.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\VM\ExecutionState.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\VM\Instruction.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\VM\OpCode.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\VM\OpCodeMetadataType.cs" />
+    <Compile Include="MoonSharp\Interpreter\Execution\VM\Processor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Extension_Methods.cs" />
+    <Compile Include="MoonSharp\Interpreter\FuzzySymbolMatchingBehavior.cs" />
+    <Compile Include="MoonSharp\Interpreter\InternalErrorException.cs" />
+    <Compile Include="MoonSharp\Interpreter\InteropAccessMode.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\AnonWrapper.2.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\AnonWrapper.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\ArrayMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\BasicDescriptors\DispatchingUserDataDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\BasicDescriptors\IMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\BasicDescriptors\IOptimizableDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\BasicDescriptors\IOverloadableMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\BasicDescriptors\IWireableDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\BasicDescriptors\MemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\BasicDescriptors\MemberDescriptorAccess.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\BasicDescriptors\ParameterDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\CompositeUserDataDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\Converters\ClrToScriptConversions.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\Converters\NumericConversions.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\Converters\ScriptToClrConversions.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\Converters\StringConversions.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\Converters\TableConversions.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\CustomConvertersCollection.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\DelegateProxyFactory.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\DescriptorHelpers.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\DynValueMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\EnumerableWrapper.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\EventMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\FieldMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\FunctionMemberDescriptorBase.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\GenericMethodMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\IGeneratorUserDataDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\InteropRegistrationPolicy.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\IPropertyTableAssigner.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\IProxyFactory.2.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\IProxyFactory.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\IUserDataDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\IUserDataMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\IUserDataType.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\LuaStateInterop\CharPtr.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\LuaStateInterop\LuaBase.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\LuaStateInterop\LuaLBuffer.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\LuaStateInterop\LuaState.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\LuaStateInterop\NamespaceDoc.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\LuaStateInterop\Tools.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\MethodMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\MoonSharpVisibleAttribute.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\NamespaceDoc.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\ObjectCallbackMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\OverloadedMethodMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\PropertyMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\PropertyTableAssigner.2.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\PropertyTableAssigner.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\ProxyUserDataDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\ReflectionSpecialName.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\ReflectionSpecialNameType.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\RegistrationPolicies\AutomaticRegistrationPolicy.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\RegistrationPolicies\DefaultRegistrationPolicy.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\RegistrationPolicies\IRegistrationPolicy.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\RegistrationPolicies\PermanentRegistrationPolicy.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\StandardDescriptors\EventFacade.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\StandardDescriptors\HardwiredDescriptors\DefaultValue.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\StandardDescriptors\HardwiredDescriptors\HardwiredMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\StandardDescriptors\HardwiredDescriptors\HardwiredMethodMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\StandardDescriptors\HardwiredDescriptors\HardwiredUserDataDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\StandardEnumUserDataDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\StandardGenericsUserDataDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\StandardUserDataDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\UserDataMemberType.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\UserDataRegistries\ExtensionMethodsRegistry.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\UserDataRegistries\TypeDescriptorRegistry.cs" />
+    <Compile Include="MoonSharp\Interpreter\Interop\ValueTypeDefaultCtorMemberDescriptor.cs" />
+    <Compile Include="MoonSharp\Interpreter\InterpreterException.cs" />
+    <Compile Include="MoonSharp\Interpreter\IO\BinDumpBinaryReader.cs" />
+    <Compile Include="MoonSharp\Interpreter\IO\BinDumpBinaryWriter.cs" />
+    <Compile Include="MoonSharp\Interpreter\IO\UndisposableStream.cs" />
+    <Compile Include="MoonSharp\Interpreter\IScriptPrivateResource.cs" />
+    <Compile Include="MoonSharp\Interpreter\LinqHelpers.cs" />
+    <Compile Include="MoonSharp\Interpreter\Loaders\EmbeddedResourcesScriptLoader.cs" />
+    <Compile Include="MoonSharp\Interpreter\Loaders\FileSystemScriptLoader.cs" />
+    <Compile Include="MoonSharp\Interpreter\Loaders\InvalidScriptLoader.cs" />
+    <Compile Include="MoonSharp\Interpreter\Loaders\IScriptLoader.cs" />
+    <Compile Include="MoonSharp\Interpreter\Loaders\NamespaceDoc.cs" />
+    <Compile Include="MoonSharp\Interpreter\Loaders\ScriptLoaderBase.cs" />
+    <Compile Include="MoonSharp\Interpreter\Loaders\UnityAssetsScriptLoader.cs" />
+    <Compile Include="MoonSharp\Interpreter\LuaTypeExtensions.cs" />
+    <Compile Include="MoonSharp\Interpreter\ModuleRegister.cs" />
+    <Compile Include="MoonSharp\Interpreter\MoonSharpHiddenAttribute.cs" />
+    <Compile Include="MoonSharp\Interpreter\MoonSharpHideMemberAttribute.cs" />
+    <Compile Include="MoonSharp\Interpreter\MoonSharpModuleAttribute.cs" />
+    <Compile Include="MoonSharp\Interpreter\MoonSharpModuleConstantAttribute.cs" />
+    <Compile Include="MoonSharp\Interpreter\MoonSharpModuleMethodAttribute.cs" />
+    <Compile Include="MoonSharp\Interpreter\MoonSharpPropertyAttribute.cs" />
+    <Compile Include="MoonSharp\Interpreter\MoonSharpUserDataAttribute.cs" />
+    <Compile Include="MoonSharp\Interpreter\MoonSharpUserDataMetamethodAttribute.cs" />
+    <Compile Include="MoonSharp\Interpreter\NamespaceDoc.cs" />
+    <Compile Include="MoonSharp\Interpreter\NetRuntimeException.cs" />
+    <Compile Include="MoonSharp\Interpreter\Platforms\IPlatformAccessor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Platforms\LimitedPlatformAccessor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Platforms\NamespaceDoc.cs" />
+    <Compile Include="MoonSharp\Interpreter\Platforms\PlatformAccessorBase.cs" />
+    <Compile Include="MoonSharp\Interpreter\Platforms\PlatformAutoDetector.cs" />
+    <Compile Include="MoonSharp\Interpreter\Platforms\StandardFileType.cs" />
+    <Compile Include="MoonSharp\Interpreter\Platforms\StandardPlatformAccessor.cs" />
+    <Compile Include="MoonSharp\Interpreter\RefIdObject.cs" />
+    <Compile Include="MoonSharp\Interpreter\REPL\NamespaceDoc.cs" />
+    <Compile Include="MoonSharp\Interpreter\REPL\ReplHistoryInterpreter.cs" />
+    <Compile Include="MoonSharp\Interpreter\REPL\ReplInterpreter.cs" />
+    <Compile Include="MoonSharp\Interpreter\REPL\ReplInterpreterScriptLoader.cs" />
+    <Compile Include="MoonSharp\Interpreter\Script.cs" />
+    <Compile Include="MoonSharp\Interpreter\ScriptExecutionContext.cs" />
+    <Compile Include="MoonSharp\Interpreter\ScriptFunctionDelegate.2.cs" />
+    <Compile Include="MoonSharp\Interpreter\ScriptFunctionDelegate.cs" />
+    <Compile Include="MoonSharp\Interpreter\ScriptGlobalOptions.cs" />
+    <Compile Include="MoonSharp\Interpreter\ScriptOptions.cs" />
+    <Compile Include="MoonSharp\Interpreter\ScriptPrivateResource_Extension.cs" />
+    <Compile Include="MoonSharp\Interpreter\ScriptRuntimeException.cs" />
+    <Compile Include="MoonSharp\Interpreter\ScriptStackOverflowException.cs" />
+    <Compile Include="MoonSharp\Interpreter\Serialization\Json\JsonNull.cs" />
+    <Compile Include="MoonSharp\Interpreter\Serialization\Json\JsonTableConverter.cs" />
+    <Compile Include="MoonSharp\Interpreter\Serialization\ObjectValueConverter.cs" />
+    <Compile Include="MoonSharp\Interpreter\Serialization\SerializationExtensions.cs" />
+    <Compile Include="MoonSharp\Interpreter\SymbolRef.cs" />
+    <Compile Include="MoonSharp\Interpreter\SymbolRefType.cs" />
+    <Compile Include="MoonSharp\Interpreter\SyntaxErrorException.cs" />
+    <Compile Include="MoonSharp\Interpreter\Table.cs" />
+    <Compile Include="MoonSharp\Interpreter\TablePair.cs" />
+    <Compile Include="MoonSharp\Interpreter\TailCallData.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expression.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expressions\AdjustmentExpression.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expressions\BinaryOperatorExpression.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expressions\DynamicExprExpression.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expressions\ExprListExpression.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expressions\FunctionCallExpression.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expressions\FunctionDefinitionExpression.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expressions\IndexExpression.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expressions\LiteralExpression.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expressions\SymbolRefExpression.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expressions\TableConstructor.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Expressions\UnaryOperatorExpression.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Fast_Interface\Loader_Fast.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\IVariable.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Lexer.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\LexerUtils.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Loop.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\LoopBoundary.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\NodeBase.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\AssignmentStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\BreakStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\ChunkStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\CompositeStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\EmptyStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\ForEachLoopStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\ForLoopStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\FunctionCallStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\FunctionDefinitionStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\GotoStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\IfStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\LabelStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\RepeatStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\ReturnStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\ScopeBlockStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Statements\WhileStatement.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\Token.cs" />
+    <Compile Include="MoonSharp\Interpreter\Tree\TokenType.cs" />
+    <Compile Include="MoonSharp\Interpreter\TypeValidationFlags.cs" />
+    <Compile Include="MoonSharp\Interpreter\UserData.cs" />
+    <Compile Include="MoonSharp\Interpreter\WellKnownSymbols.cs" />
+    <Compile Include="MoonSharp\Interpreter\YieldRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleJSON\JSON.cs" />
+    <Compile Include="SimpleJSON\JSONArray.cs" />
+    <Compile Include="SimpleJSON\JSONBool.cs" />
+    <Compile Include="SimpleJSON\JSONContainerType.cs" />
+    <Compile Include="SimpleJSON\JSONLazyCreator.cs" />
+    <Compile Include="SimpleJSON\JSONNode.cs" />
+    <Compile Include="SimpleJSON\JSONNodeType.cs" />
+    <Compile Include="SimpleJSON\JSONNull.cs" />
+    <Compile Include="SimpleJSON\JSONNumber.cs" />
+    <Compile Include="SimpleJSON\JSONObject.cs" />
+    <Compile Include="SimpleJSON\JSONString.cs" />
+    <Compile Include="SimpleJSON\JSONTextMode.cs" />
+    <Compile Include="TweenAction.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="_PrivateImplementationDetails_.cs" />
+    <Compile Include="__f__AnonymousType0.cs" />
+    <Compile Include="__f__AnonymousType1.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
