@@ -95,7 +95,8 @@ Save to `{@artifacts_path}/plan.md`.
 - Wrap `OnUpdate` in try-catch for error isolation.
 - Verification: Create a test mod and verify all lifecycle hooks trigger correctly.
 
-### [ ] Step: Conversion of "The Bad Place Executor"
+### [x] Step: Conversion of "The Bad Place Executor"
+<!-- chat-id: e517c29c-dbd6-4d48-80d1-407175f57e1f -->
 - Port the MelonLoader mod from `ConvertThisMod/` to the PML SDK.
 - Adapt the IPC server and MoonSharp script execution logic.
 - Verification: Verify the converted mod can receive and execute Lua scripts via IPC.

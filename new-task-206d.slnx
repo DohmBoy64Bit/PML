@@ -4,5 +4,6 @@
     <Project Path="src/PML.Tests/PML.Tests.csproj" />
     <Project Path="src/PolytoriaLoader/PolytoriaLoader.csproj" />
     <Project Path="src/TestMod/TestMod.csproj" />
+    <Project Path="src/TheBadPlaceExecutor/TheBadPlaceExecutor.csproj" />
   </Folder>
 </Solution>
